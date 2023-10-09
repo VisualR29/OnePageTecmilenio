@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MagallanesLigth';
+    src: url(./../sources/Magallanes/MagallanesLight.ttf);
+}
+
+@font-face {
+    font-family: 'MagallanesBold';
+    src: url(./../../sources/Magallanes/MagallanesBold.ttf);
+}
+
+@font-face {
+    font-family: 'TheSansLight';
+    src: url(./../sources/the-sans-light/TheSansLight-Plain.otf);
+}
+
+@font-face {
+    font-family: 'TheSansRegular';
+    src: url(./../sources/the-sans-regular/TheSansRegular.otf);
+}
+
+@font-face {
+    font-family: 'TheSansBold';
+    src: url(./../sources/the-sans-bold-bold-plain_VSnvw/TheSansBoldBoldPlain.ttf);
+}
+
+@font-face {
+    font-family: 'SerifPro';
+    src: url(./../sources/amor-serif-text-pro-regular_NLN4g/AmorSerifTextProRegular.otf);
+}
+
+.fontMagallanesLight {
+    font-family: 'MagallanesLigth';
+}
+
+.fontMagallanesBold {
+    font-family: 'MagallanesBold';
+}
+
+.fontSansLight {
+    font-family: 'TheSansLight';
+}
+
+.fontSansRegular {
+    font-family: 'TheSansRegular';
+}
+
+.fontSansBold {
+    font-family: 'TheSansBold';
+}
+
+.fontSerifPro {
+    font-family: 'serifPro';
+}
