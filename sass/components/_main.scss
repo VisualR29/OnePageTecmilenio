@@ -1,0 +1,173 @@
+.hero {}
+
+
+
+.tablas {}
+
+
+
+.tabs {
+    .contenedor {
+        width: 90%;
+        max-width: 120em;
+        background-color: lightcoral;
+        padding: 1em;
+
+        ul {
+            width: 100%;
+            list-style: none;
+            background-color: lightblue;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            .li {
+                background-color: lightgreen;
+                margin: 0 2em 0 0;
+                padding: 1em;
+                width: 15vh;
+                height: 2em;
+                font-size: 14px;
+                text-align: center;
+                transition: all .5s ease;
+            }
+
+            .activo {
+                background-color: lightskyblue;
+                color: white;
+            }
+        }
+    }
+
+    .subcontenedor {
+        min-height: 10vh;
+        background-color: lightsalmon;
+        position: relative;
+
+        .bloque {
+            background-color: lightseagreen;
+            margin: 1em;
+            padding: 1em;
+
+            display: grid;
+            grid-template-columns: 0.25fr 1fr .3fr 1fr .3fr 1fr 0.25fr;
+            grid-template-rows: repeat(7, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: all .5s ease;
+
+            h2 {
+                grid-area: 1 / 2 / 2 / 7;
+            }
+
+            .tabs-valores {
+                grid-area: 2 / 2 / 3 / 7;
+                background-color: lightpink;
+
+                display: grid;
+                grid-template-columns: 1fr .25fr 1fr .25fr 1fr;
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+
+                .tabs-valores-cuadro {
+                    background-color: lightyellow;
+                    padding: 2em;
+
+                    h3 {}
+
+                    p {padding: 0.5em;}
+                }
+
+                .div1 {
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+
+                .div2 {
+                    grid-area: 1 / 3 / 2 / 4;
+                }
+
+                .div3 {
+                    grid-area: 1 / 5 / 2 / 6;
+                }
+            }
+
+            .tabs-opciones {
+                grid-area: 4 / 2 / 8 / 7;
+                background-color: antiquewhite;
+
+                display: grid;
+                grid-template-columns: 1fr .25fr 1fr .25fr 1fr;
+                grid-template-rows: 1fr .25fr 1fr .25fr 1fr .25fr 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                .tabs-opciones-opcion {
+                    background-color: darkgray;
+
+                }
+
+                .subdiv1 {
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+
+                .subdiv2 {
+                    grid-area: 1 / 3 / 2 / 4;
+                }
+
+                .subdiv3 {
+                    grid-area: 1 / 5 / 2 / 6;
+                }
+
+                .subdiv4 {
+                    grid-area: 3 / 1 / 4 / 2;
+                }
+
+                .subdiv5 {
+                    grid-area: 3 / 3 / 4 / 4;
+                }
+
+                .subdiv6 {
+                    grid-area: 3 / 5 / 4 / 6;
+                }
+
+                .subdiv7 {
+                    grid-area: 5 / 1 / 6 / 2;
+                }
+
+                .subdiv8 {
+                    grid-area: 5 / 3 / 6 / 4;
+                }
+
+                .subdiv9 {
+                    grid-area: 5 / 5 / 6 / 6;
+                }
+
+                .subdiv10 {
+                    grid-area: 7 / 1 / 8 / 2;
+                }
+
+                .subdiv11 {
+                    grid-area: 7 / 3 / 8 / 4;
+                }
+
+                .subdiv12 {
+                    grid-area: 7 / 5 / 8 / 6;
+                }
+            }
+        }
+
+        .activo {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+}
