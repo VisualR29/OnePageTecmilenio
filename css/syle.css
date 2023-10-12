@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'TheSansLight'; }
 
 @font-face {
   font-family: 'MagallanesLigth';
@@ -44,6 +45,30 @@
 .fontSerifPro {
   font-family: 'serifPro'; }
 
+.hero img {
+  height: 100vh; }
+
+.tablas {
+  background-color: lightblue; }
+  .tablas .tablas-contenedor {
+    background-color: lightyellow;
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    .tablas .tablas-contenedor .tablas-tabla {
+      background-color: lightcyan;
+      width: 80vh; }
+      .tablas .tablas-contenedor .tablas-tabla h2 {
+        background-color: lightgreen; }
+      .tablas .tablas-contenedor .tablas-tabla div {
+        background-color: lightpink; }
+    .tablas .tablas-contenedor .tablas-descripcion {
+      width: 20vh; }
+      .tablas .tablas-contenedor .tablas-descripcion img {
+        background-color: lightsalmon; }
+      .tablas .tablas-contenedor .tablas-descripcion p {
+        background-color: lightskyblue; }
+
 .tabs .contenedor {
   width: 90%;
   max-width: 120em;
@@ -80,7 +105,7 @@
     padding: 1em;
     display: grid;
     grid-template-columns: 0.25fr 1fr .3fr 1fr .3fr 1fr 0.25fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 0.50fr 1fr .8fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     position: absolute;
