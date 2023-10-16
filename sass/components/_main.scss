@@ -1,213 +1,90 @@
-.hero {
-    img{
-        height: 100vh;
-    }
-    // borrame
-}
-
-
-
-.tablas {
-    background-color: lightblue;
-
-    .tablas-contenedor {
-        background-color: lightyellow;
-        width: 100%;
-
-        display: flex;
-        flex-direction: row;
-
-        .tablas-tabla {
-            background-color: lightcyan;
-            width: 80vh;
-
-            h2 {
-                background-color: lightgreen;
-            }
-
-            div {
-                background-color: lightpink;
-
-            }
-        }
-
-        .tablas-descripcion {
-            width: 20vh;
-
-            img {
-                background-color: lightsalmon;
-
-            }
-
-            p {
-                background-color: lightskyblue;
-
-            }
-        }
-    }
-}
-
-
+.hero {}
 
 .tabs {
     .contenedor {
-        width: 90%;
-        max-width: 120em;
-        background-color: lightcoral;
-        padding: 1em;
+        .ul-contenedor {
+            .li-contenedor {}
 
-        ul {
-            width: 100%;
-            list-style: none;
-            background-color: lightblue;
-
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-start;
-            align-items: center;
-
-            .li {
-                background-color: lightgreen;
-                margin: 0 2em 0 0;
-                padding: 1em;
-                width: 15vh;
-                height: 2em;
-                font-size: 14px;
-                text-align: center;
-                transition: all .5s ease;
-            }
-
-            .activo {
-                background-color: lightskyblue;
-                color: white;
-            }
+            .activo {}
         }
     }
 
     .subcontenedor {
-        min-height: 10vh;
-        background-color: lightsalmon;
         position: relative;
 
         .bloque {
-            background-color: lightseagreen;
-            margin: 1em;
-            padding: 1em;
-
-            display: grid;
-            grid-template-columns: 0.25fr 1fr .3fr 1fr .3fr 1fr 0.25fr;
-            grid-template-rows: 0.50fr 1fr .8fr 1fr 1fr 1fr 1fr;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-
             position: absolute;
             top: 0;
             opacity: 0;
             transform: translateY(50%);
             transition: all .5s ease;
 
-            h2 {
-                grid-area: 1 / 2 / 2 / 7;
-            }
+            h2 {}
 
-            .tabs-valores {
-                grid-area: 2 / 2 / 3 / 7;
-                background-color: lightpink;
+            p {}
 
-                display: grid;
-                grid-template-columns: 1fr .25fr 1fr .25fr 1fr;
-                grid-template-rows: 1fr;
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
+            .imagen {}
 
-
-                .tabs-valores-cuadro {
-                    background-color: lightyellow;
-                    padding: 2em;
-
+            .tabla {
+                .titulo-tabla {
                     h3 {}
+                }
 
-                    p {
-                        padding: 0.5em;
+                .boton-tabla {
+                    div {
+                        a {}
                     }
                 }
 
-                .div1 {
-                    grid-area: 1 / 1 / 2 / 2;
+                .oferta-aprendedores {
+                    .oferta-contenedor {
+                        .oferta-ul {
+                            .oferta-li {}
+
+                            .subactivado {}
+                        }
+
+                        .oferta-subcontenedor {
+                            .oferta-bloque {}
+
+                            .subactivado {}
+                        }
+                    }
                 }
 
-                .div2 {
-                    grid-area: 1 / 3 / 2 / 4;
+                .oferta-adultos {
+                    .oferta-contenedor {
+                        .oferta-ul {
+                            .oferta-li {}
+
+                            .subactivado {}
+                        }
+
+                        .oferta-subcontenedor {
+                            .oferta-bloque {}
+
+                            .subactivado {}
+                        }
+                    }
                 }
 
-                .div3 {
-                    grid-area: 1 / 5 / 2 / 6;
-                }
-            }
+                .oferta-jovenes {
+                    .oferta-contenedor {
+                        .oferta-ul {
+                            .oferta-li {}
 
-            .tabs-opciones {
-                grid-area: 4 / 2 / 8 / 7;
-                background-color: antiquewhite;
+                            .subactivado {}
+                        }
 
-                display: grid;
-                grid-template-columns: 1fr .25fr 1fr .25fr 1fr;
-                grid-template-rows: 1fr .25fr 1fr .25fr 1fr .25fr 1fr;
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
+                        .oferta-subcontenedor {
+                            .oferta-bloque {}
 
-                .tabs-opciones-opcion {
-                    background-color: darkgray;
-
-                }
-
-                .subdiv1 {
-                    grid-area: 1 / 1 / 2 / 2;
-                }
-
-                .subdiv2 {
-                    grid-area: 1 / 3 / 2 / 4;
-                }
-
-                .subdiv3 {
-                    grid-area: 1 / 5 / 2 / 6;
-                }
-
-                .subdiv4 {
-                    grid-area: 3 / 1 / 4 / 2;
-                }
-
-                .subdiv5 {
-                    grid-area: 3 / 3 / 4 / 4;
-                }
-
-                .subdiv6 {
-                    grid-area: 3 / 5 / 4 / 6;
-                }
-
-                .subdiv7 {
-                    grid-area: 5 / 1 / 6 / 2;
-                }
-
-                .subdiv8 {
-                    grid-area: 5 / 3 / 6 / 4;
-                }
-
-                .subdiv9 {
-                    grid-area: 5 / 5 / 6 / 6;
-                }
-
-                .subdiv10 {
-                    grid-area: 7 / 1 / 8 / 2;
-                }
-
-                .subdiv11 {
-                    grid-area: 7 / 3 / 8 / 4;
-                }
-
-                .subdiv12 {
-                    grid-area: 7 / 5 / 8 / 6;
+                            .subactivado {}
+                        }
+                    }
                 }
             }
+
         }
 
         .activo {
@@ -216,3 +93,78 @@
         }
     }
 }
+
+
+
+// .tabs {
+
+//     .contenedor {
+//         width: 90%;
+//         max-width: 120em;
+//         background-color: lightcoral;
+//         padding: 1em;
+
+//         ul {
+//             width: 100%;
+//             list-style: none;
+//             background-color: lightblue;
+
+//             display: flex;
+//             flex-flow: row nowrap;
+//             justify-content: flex-start;
+//             align-items: center;
+
+//             .li {
+//                 background-color: lightgreen;
+//                 margin: 0 2em 0 0;
+//                 padding: 1em;
+//                 width: 15vh;
+//                 height: 2em;
+//                 font-size: 14px;
+//                 text-align: center;
+//                 transition: all .5s ease;
+//             }
+
+//             .activo {
+//                 background-color: lightskyblue;
+//                 color: white;
+//             }
+//         }
+//     }
+
+//     .subcontenedor {
+//         min-height: 10vh;
+//         background-color: lightsalmon;
+//         position: relative;
+
+//         .bloque {
+//             background-color: lightseagreen;
+//             margin: 1em;
+//             padding: 1em;
+
+//             position: absolute;
+//             top: 0;
+//             opacity: 0;
+//             transform: translateY(50%);
+//             transition: all .5s ease;
+
+//             h2 {
+
+//             }
+
+//             .tabs-valores {
+//                 background-color: lightpink;
+
+//                 .tabs-valores-cuadro {
+//                     background-color: lightyellow;
+//                     padding: 2em;
+//                 }
+//             }
+//         }
+
+//         .activo {
+//             opacity: 1;
+//             transform: translateY(0%);
+//         }
+//     }
+// }

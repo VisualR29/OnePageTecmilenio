@@ -1,7 +1,10 @@
 'use strict'
 
-const li = document.querySelectorAll('.li')
+const li = document.querySelectorAll('.li-contenedor')
 const bloque = document.querySelectorAll('.bloque')
+const ofertali = document.querySelectorAll('.oferta-ul')
+const ofertabloque = document.querySelectorAll('.oferta-bloque')
+
 
 //Recorriendo todos lo li
 li.forEach((cadaLi, i) => {
@@ -14,6 +17,7 @@ li.forEach((cadaLi, i) => {
             li[i].classList.remove('activo')
             //Quitando la calse activo de cada bloque
             bloque[i].classList.remove('activo')
+            
         })
 
         //En el li que demos click le añadimos la clase activo
