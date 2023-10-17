@@ -1,90 +1,97 @@
 .hero {}
 
+
 .tabs {
     .contenedor {
-        .ul-contenedor {
-            .li-contenedor {}
+        width: 90%;
+        max-width: 120em;
+
+        .ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            .li {
+                margin: 0 2em 0 0;
+                padding: 1em;
+                width: 15vh;
+                height: 2em;
+                font-size: 14px;
+                text-align: center;
+                transition: all .5s ease;
+            }
 
             .activo {}
         }
     }
 
     .subcontenedor {
+        min-height: 10vh;
         position: relative;
 
         .bloque {
+            margin: 1em;
+            padding: 1em;
             position: absolute;
             top: 0;
             opacity: 0;
             transform: translateY(50%);
             transition: all .5s ease;
 
-            h2 {}
+            .informacion {
+                h2 {}
+            }
 
-            p {}
+            .tabla {}
 
-            .imagen {}
+            .seg-tabs {
+                .seg-contenedor {
+                    width: 90%;
+                    max-width: 120em;
 
-            .tabla {
-                .titulo-tabla {
-                    h3 {}
-                }
+                    .seg-ul {
+                        list-style: none;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: flex-start;
+                        align-items: center;
 
-                .boton-tabla {
-                    div {
-                        a {}
+                        .seg-li {
+                            margin: 0 2em 0 0;
+                            padding: 1em;
+                            width: 15vh;
+                            height: 2em;
+                            font-size: 14px;
+                            text-align: center;
+                            transition: all .5s ease;
+                        }
+
+                        .seg-activo {}
                     }
                 }
 
-                .oferta-aprendedores {
-                    .oferta-contenedor {
-                        .oferta-ul {
-                            .oferta-li {}
+                .seg-subcontenedor {
+                    min-height: 10vh;
+                    position: relative;
 
-                            .subactivado {}
-                        }
-
-                        .oferta-subcontenedor {
-                            .oferta-bloque {}
-
-                            .subactivado {}
-                        }
+                    .seg-bloque {
+                        margin: 1em;
+                        padding: 1em;
+                        position: absolute;
+                        top: 0;
+                        opacity: 0;
+                        transform: translateY(50%);
+                        transition: all .5s ease;
                     }
-                }
 
-                .oferta-adultos {
-                    .oferta-contenedor {
-                        .oferta-ul {
-                            .oferta-li {}
-
-                            .subactivado {}
-                        }
-
-                        .oferta-subcontenedor {
-                            .oferta-bloque {}
-
-                            .subactivado {}
-                        }
-                    }
-                }
-
-                .oferta-jovenes {
-                    .oferta-contenedor {
-                        .oferta-ul {
-                            .oferta-li {}
-
-                            .subactivado {}
-                        }
-
-                        .oferta-subcontenedor {
-                            .oferta-bloque {}
-
-                            .subactivado {}
-                        }
+                    .seg-activo {
+                        opacity: 1;
+                        transform: translateY(0%);
                     }
                 }
             }
-
         }
 
         .activo {
@@ -93,78 +100,3 @@
         }
     }
 }
-
-
-
-// .tabs {
-
-//     .contenedor {
-//         width: 90%;
-//         max-width: 120em;
-//         background-color: lightcoral;
-//         padding: 1em;
-
-//         ul {
-//             width: 100%;
-//             list-style: none;
-//             background-color: lightblue;
-
-//             display: flex;
-//             flex-flow: row nowrap;
-//             justify-content: flex-start;
-//             align-items: center;
-
-//             .li {
-//                 background-color: lightgreen;
-//                 margin: 0 2em 0 0;
-//                 padding: 1em;
-//                 width: 15vh;
-//                 height: 2em;
-//                 font-size: 14px;
-//                 text-align: center;
-//                 transition: all .5s ease;
-//             }
-
-//             .activo {
-//                 background-color: lightskyblue;
-//                 color: white;
-//             }
-//         }
-//     }
-
-//     .subcontenedor {
-//         min-height: 10vh;
-//         background-color: lightsalmon;
-//         position: relative;
-
-//         .bloque {
-//             background-color: lightseagreen;
-//             margin: 1em;
-//             padding: 1em;
-
-//             position: absolute;
-//             top: 0;
-//             opacity: 0;
-//             transform: translateY(50%);
-//             transition: all .5s ease;
-
-//             h2 {
-
-//             }
-
-//             .tabs-valores {
-//                 background-color: lightpink;
-
-//                 .tabs-valores-cuadro {
-//                     background-color: lightyellow;
-//                     padding: 2em;
-//                 }
-//             }
-//         }
-
-//         .activo {
-//             opacity: 1;
-//             transform: translateY(0%);
-//         }
-//     }
-// }

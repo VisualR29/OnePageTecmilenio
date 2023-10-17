@@ -45,14 +45,66 @@
 .fontSerifPro {
   font-family: 'serifPro'; }
 
+.tabs .contenedor {
+  width: 90%;
+  max-width: 120em; }
+  .tabs .contenedor .ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center; }
+    .tabs .contenedor .ul .li {
+      margin: 0 2em 0 0;
+      padding: 1em;
+      width: 15vh;
+      height: 2em;
+      font-size: 14px;
+      text-align: center;
+      transition: all .5s ease; }
+
 .tabs .subcontenedor {
+  min-height: 10vh;
   position: relative; }
   .tabs .subcontenedor .bloque {
+    margin: 1em;
+    padding: 1em;
     position: absolute;
     top: 0;
     opacity: 0;
     transform: translateY(50%);
     transition: all .5s ease; }
+    .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor {
+      width: 90%;
+      max-width: 120em; }
+      .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center; }
+        .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul .seg-li {
+          margin: 0 2em 0 0;
+          padding: 1em;
+          width: 15vh;
+          height: 2em;
+          font-size: 14px;
+          text-align: center;
+          transition: all .5s ease; }
+    .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor {
+      min-height: 10vh;
+      position: relative; }
+      .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-bloque {
+        margin: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transform: translateY(50%);
+        transition: all .5s ease; }
+      .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-activo {
+        opacity: 1;
+        transform: translateY(0%); }
   .tabs .subcontenedor .activo {
     opacity: 1;
     transform: translateY(0%); }
