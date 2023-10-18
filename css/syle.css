@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'TheSansLight'; }
+  background-color: #f9f1e6;
+  font-family: 'MagallanesLight'; }
 
 @font-face {
   font-family: 'MagallanesLigth';
@@ -45,66 +46,96 @@
 .fontSerifPro {
   font-family: 'serifPro'; }
 
-.tabs .contenedor {
-  width: 90%;
-  max-width: 120em; }
-  .tabs .contenedor .ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center; }
-    .tabs .contenedor .ul .li {
-      margin: 0 2em 0 0;
-      padding: 1em;
-      width: 15vh;
-      height: 2em;
-      font-size: 14px;
-      text-align: center;
-      transition: all .5s ease; }
+.hero {
+  margin-bottom: 10vh; }
+  .hero img {
+    height: 100vh; }
 
-.tabs .subcontenedor {
-  min-height: 10vh;
-  position: relative; }
-  .tabs .subcontenedor .bloque {
-    margin: 1em;
-    padding: 1em;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transform: translateY(50%);
-    transition: all .5s ease; }
-    .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor {
-      width: 90%;
-      max-width: 120em; }
-      .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul {
-        list-style: none;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center; }
-        .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul .seg-li {
-          margin: 0 2em 0 0;
-          padding: 1em;
-          width: 15vh;
-          height: 2em;
-          font-size: 14px;
-          text-align: center;
-          transition: all .5s ease; }
-    .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor {
-      min-height: 10vh;
-      position: relative; }
-      .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-bloque {
-        margin: 1em;
+.tabs {
+  width: 100vw;
+  height: 100vh; }
+  .tabs .contenedor {
+    display: flex;
+    justify-content: center; }
+    .tabs .contenedor .ul {
+      list-style: none;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center; }
+      .tabs .contenedor .ul .li {
+        margin: 0 1.6em 0 1.6em;
         padding: 1em;
-        position: absolute;
-        top: 0;
-        opacity: 0;
-        transform: translateY(50%);
+        width: 6.7em;
+        height: .8em;
+        font-size: 25px;
+        text-align: center;
+        background-color: #00a499;
+        color: #00534c;
         transition: all .5s ease; }
-      .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-activo {
-        opacity: 1;
-        transform: translateY(0%); }
-  .tabs .subcontenedor .activo {
-    opacity: 1;
-    transform: translateY(0%); }
+      .tabs .contenedor .ul .activo {
+        padding: 1.1em;
+        background-color: #68caba;
+        color: #c3f7ee; }
+  .tabs .subcontenedor {
+    position: relative; }
+    .tabs .subcontenedor .bloque {
+      margin: 1em;
+      padding: 1em;
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      transform: translateY(50%);
+      transition: all .5s ease; }
+      .tabs .subcontenedor .bloque .tabla-ap {
+        display: grid;
+        grid-template-columns: 0.5fr repeat(2, 1fr);
+        grid-template-rows: .2fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; }
+      .tabs .subcontenedor .bloque .tabla-ad {
+        display: grid;
+        grid-template-columns: 0.5fr repeat(2, 1fr);
+        grid-template-rows: 0.2fr repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; }
+      .tabs .subcontenedor .bloque .tabla-jo {
+        display: grid;
+        grid-template-columns: 0.5fr repeat(2, 1fr);
+        grid-template-rows: 0.2fr repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; }
+      .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor {
+        width: 90%;
+        max-width: 120em; }
+        .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul {
+          list-style: none;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          align-items: center; }
+          .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul .seg-li {
+            margin: 0 2em 0 0;
+            padding: 1em;
+            width: 15vh;
+            height: 2em;
+            font-size: 14px;
+            text-align: center;
+            transition: all .5s ease; }
+      .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor {
+        min-height: 10vh;
+        width: 90vw;
+        position: relative; }
+        .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-bloque {
+          margin: 1em;
+          padding: 1em;
+          position: absolute;
+          top: 0;
+          opacity: 0;
+          transform: translateY(50%);
+          transition: all .5s ease; }
+        .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-activo {
+          opacity: 1;
+          transform: translateY(0%); }
+    .tabs .subcontenedor .activo {
+      opacity: 1;
+      transform: translateY(0%); }

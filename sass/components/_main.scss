@@ -1,34 +1,47 @@
-.hero {}
+.hero {
+    margin-bottom: 10vh;
+    img {
+        height: 100vh;
+    }
+}
 
 
 .tabs {
+    width: 100vw;
+    height: 100vh;
+
     .contenedor {
-        width: 90%;
-        max-width: 120em;
+        display: flex;
+        justify-content: center;
 
         .ul {
             list-style: none;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: flex-start;
-            align-items: center;
+            justify-content: center;
 
             .li {
-                margin: 0 2em 0 0;
+                margin: 0 1.6em 0 1.6em;
                 padding: 1em;
-                width: 15vh;
-                height: 2em;
-                font-size: 14px;
+                width: 6.7em;
+                height: .8em;
+                font-size: 25px;
                 text-align: center;
+                background-color: nth($color-master , 3);
+                color: nth($color-master ,1);
                 transition: all .5s ease;
             }
 
-            .activo {}
+            .activo {
+                padding: 1.1em;
+                background-color: nth($color-master, 2);
+                color: nth($color-secun, 2);
+            }
         }
     }
 
+
     .subcontenedor {
-        min-height: 10vh;
         position: relative;
 
         .bloque {
@@ -42,11 +55,158 @@
 
             .informacion {
                 h2 {}
+
+                p {}
+
+                img {}
             }
 
-            .tabla {}
+            .tabla-ap {
+                display: grid;
+                grid-template-columns: .5fr repeat(2, 1fr);
+                grid-template-rows: .2fr 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                .div1-ap {
+                    h3 {}
+                }
+
+                .div2-ap {
+                    h3 {}
+                }
+
+                .div3-ap {
+                    h3 {}
+                }
+
+                .div4-ap {
+                    div {
+                        a {}
+                    }
+                }
+
+                .div5-ap {
+                    p {}
+                }
+
+                .div6-ap {}
+            }
+
+            .tabla-ad {
+                display: grid;
+                grid-template-columns: .5fr repeat(2, 1fr);
+                grid-template-rows: .2fr repeat(3, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                .div1-ad {
+                    h3 {}
+                }
+
+                .div2-ad {
+                    h3 {}
+                }
+
+                .div3-ad {
+                    h3 {}
+                }
+
+                .div4-ad {
+                    div {
+                        a {}
+                    }
+                }
+
+                .div5-ad {
+                    p {}
+                }
+
+                .div6-ad {}
+
+                .div7-ad {
+                    div {
+                        a {}
+                    }
+                }
+
+                .div8-ad {
+                    p {}
+                }
+
+                .div9-ad {}
+
+                .div10-ad {
+                    div {
+                        a {}
+                    }
+                }
+
+                .div11-ad {
+                    p {}
+                }
+
+                .div12-ad {}
+            }
+
+            .tabla-jo {
+                display: grid;
+                grid-template-columns: .5fr repeat(2, 1fr);
+                grid-template-rows: .2fr repeat(3, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                .div1-jo {
+                    h3 {}
+                }
+
+                .div2-jo {
+                    h3 {}
+                }
+
+                .div3-jo {
+                    h3 {}
+                }
+
+                .div4-jo {
+                    div {
+                        a {}
+                    }
+                }
+
+                .div5-jo {
+                    p {}
+                }
+
+                .div6-jo {}
+
+                .div7-jo {
+                    div {
+                        a {}
+                    }
+                }
+
+                .div8-jo {
+                    p {}
+                }
+
+                .div9-jo {}
+
+                .div10-jo {
+                    div {
+                        a {}
+                    }
+                }
+
+                .div11-jo {
+                    p {}
+                }
+
+                .div12-jo {}
+            }
 
             .seg-tabs {
+
                 .seg-contenedor {
                     width: 90%;
                     max-width: 120em;
@@ -74,6 +234,7 @@
 
                 .seg-subcontenedor {
                     min-height: 10vh;
+                    width: 90vw;
                     position: relative;
 
                     .seg-bloque {

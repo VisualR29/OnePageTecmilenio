@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    background-color: nth($color-secun, 1);
     // Borrame!!!!
-    font-family: 'TheSansLight';
+    font-family: 'MagallanesLight';
 }
 
 @font-face {
