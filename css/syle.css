@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
   background-color: #f9f1e6;
-  font-family: 'MagallanesLight'; }
+  font-family: 'TheSansRegular'; }
+  * h1 {
+    font-family: 'MagallanesBold'; }
+  * h2 {
+    font-family: 'MagallanesBold'; }
+  * h3 {
+    font-family: 'MagallanesLight'; }
 
 @font-face {
   font-family: 'MagallanesLigth';
@@ -74,8 +80,8 @@
         transition: all .5s ease; }
       .tabs .contenedor .ul .activo {
         padding: 1.1em;
-        background-color: #68caba;
-        color: #c3f7ee; }
+        background-color: #c3f7ee;
+        color: #007864; }
   .tabs .subcontenedor {
     position: relative; }
     .tabs .subcontenedor .bloque {
@@ -86,56 +92,263 @@
       opacity: 0;
       transform: translateY(50%);
       transition: all .5s ease; }
+      .tabs .subcontenedor .bloque .informacion h2 {
+        font-size: 60px;
+        text-align: center;
+        color: #00534c; }
       .tabs .subcontenedor .bloque .tabla-ap {
+        margin: 0 10em 0 10em;
         display: grid;
-        grid-template-columns: 0.5fr repeat(2, 1fr);
+        grid-template-columns: .40fr 1fr .5fr;
         grid-template-rows: .2fr 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px; }
+        .tabs .subcontenedor .bloque .tabla-ap .div1-ap h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-ap .div2-ap h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-ap .div3-ap h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-ap .div4-ap {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .tabs .subcontenedor .bloque .tabla-ap .div4-ap div {
+            padding: 1em;
+            width: 8em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: #00534c;
+            color: #68caba; }
+        .tabs .subcontenedor .bloque .tabla-ap .div5-ap p {
+          margin: 1.5em 4em 0 4em;
+          padding: 1em 3em 1em 3em;
+          text-align: justify;
+          font-size: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .tabs .subcontenedor .bloque .tabla-ap .div6-ap pre {
+          padding: 2em 9em 0 9em; }
       .tabs .subcontenedor .bloque .tabla-ad {
+        margin: 0 10em 0 10em;
         display: grid;
-        grid-template-columns: 0.5fr repeat(2, 1fr);
+        grid-template-columns: .40fr 1fr .5fr;
         grid-template-rows: 0.2fr repeat(3, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px; }
+        .tabs .subcontenedor .bloque .tabla-ad .div1-ad h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-ad .div2-ad h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-ad .div3-ad h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-ad .div4-ad {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .tabs .subcontenedor .bloque .tabla-ad .div4-ad div {
+            padding: 1em;
+            width: 8em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: #00534c;
+            color: #68caba; }
+        .tabs .subcontenedor .bloque .tabla-ad .div5-ad p {
+          margin: 1.5em 4em 0 4em;
+          padding: 1em 3em 1em 3em;
+          text-align: justify;
+          font-size: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .tabs .subcontenedor .bloque .tabla-ad .div6-ad pre {
+          padding: 2em 9em 0 9em; }
+        .tabs .subcontenedor .bloque .tabla-ad .div7-ad {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .tabs .subcontenedor .bloque .tabla-ad .div7-ad div {
+            padding: 1em;
+            width: 8em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: #00534c;
+            color: #68caba; }
+        .tabs .subcontenedor .bloque .tabla-ad .div8-ad p {
+          margin: 1.5em 4em 0 4em;
+          padding: 1em 3em 1em 3em;
+          text-align: justify;
+          font-size: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .tabs .subcontenedor .bloque .tabla-ad .div9-ad pre {
+          padding: 2em 9em 0 9em; }
+        .tabs .subcontenedor .bloque .tabla-ad .div10-ad {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .tabs .subcontenedor .bloque .tabla-ad .div10-ad div {
+            padding: 1em;
+            width: 8em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: #00534c;
+            color: #68caba; }
+        .tabs .subcontenedor .bloque .tabla-ad .div11-ad p {
+          margin: 1.5em 4em 0 4em;
+          padding: 1em 3em 1em 3em;
+          text-align: justify;
+          font-size: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .tabs .subcontenedor .bloque .tabla-ad .div12-ad pre {
+          padding: 2em 9em 0 9em; }
       .tabs .subcontenedor .bloque .tabla-jo {
+        margin: 0 10em 0 10em;
         display: grid;
-        grid-template-columns: 0.5fr repeat(2, 1fr);
+        grid-template-columns: .40fr 1fr .5fr;
         grid-template-rows: 0.2fr repeat(3, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px; }
+        .tabs .subcontenedor .bloque .tabla-jo .div1-jo h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-jo .div2-jo h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-jo .div3-jo h3 {
+          font-size: 30px;
+          text-align: center;
+          color: #007864; }
+        .tabs .subcontenedor .bloque .tabla-jo .div4-jo {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .tabs .subcontenedor .bloque .tabla-jo .div4-jo div {
+            padding: 1em;
+            width: 8em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: #00534c;
+            color: #68caba; }
+        .tabs .subcontenedor .bloque .tabla-jo .div5-jo p {
+          margin: 1.5em 4em 0 4em;
+          padding: 1em 3em 1em 3em;
+          text-align: justify;
+          font-size: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .tabs .subcontenedor .bloque .tabla-jo .div6-jo pre {
+          padding: 2em 9em 0 9em; }
+        .tabs .subcontenedor .bloque .tabla-jo .div7-jo {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .tabs .subcontenedor .bloque .tabla-jo .div7-jo div {
+            padding: 1em;
+            width: 8em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: #00534c;
+            color: #68caba; }
+        .tabs .subcontenedor .bloque .tabla-jo .div8-jo p {
+          margin: 1.5em 4em 0 4em;
+          padding: 1em 3em 1em 3em;
+          text-align: justify;
+          font-size: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .tabs .subcontenedor .bloque .tabla-jo .div9-jo pre {
+          padding: 2em 9em 0 9em; }
+        .tabs .subcontenedor .bloque .tabla-jo .div10-jo {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .tabs .subcontenedor .bloque .tabla-jo .div10-jo div {
+            padding: 1em;
+            width: 8em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: #00534c;
+            color: #68caba; }
+        .tabs .subcontenedor .bloque .tabla-jo .div11-jo p {
+          margin: 1.5em 4em 0 4em;
+          padding: 1em 3em 1em 3em;
+          text-align: justify;
+          font-size: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .tabs .subcontenedor .bloque .tabla-jo .div12-jo pre {
+          padding: 2em 9em 0 9em; }
       .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor {
         width: 90%;
         max-width: 120em; }
         .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul {
+          background-color: #00a499;
           list-style: none;
           display: flex;
           flex-flow: row nowrap;
           justify-content: flex-start;
           align-items: center; }
           .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul .seg-li {
-            margin: 0 2em 0 0;
-            padding: 1em;
-            width: 15vh;
-            height: 2em;
-            font-size: 14px;
+            margin: 0 1.6em 0 1.6em;
+            padding: .8em;
+            width: 6.7em;
+            height: 1.8em;
+            font-size: 18px;
             text-align: center;
+            background-color: #00a499;
+            color: #00534c;
             transition: all .5s ease; }
+          .tabs .subcontenedor .bloque .seg-tabs .seg-contenedor .seg-ul .seg-activo {
+            padding: 1.1em;
+            background-color: #68caba;
+            color: #c3f7ee; }
       .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor {
-        min-height: 10vh;
         width: 90vw;
-        position: relative; }
+        position: relative;
+        background-color: #68caba; }
         .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-bloque {
-          margin: 1em;
           padding: 1em;
           position: absolute;
           top: 0;
           opacity: 0;
-          transform: translateY(50%);
+          background-color: #68caba;
           transition: all .5s ease; }
+          .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-bloque h3 {
+            font-size: 30px;
+            text-align: center;
+            background-color: #68caba;
+            color: #00534c; }
         .tabs .subcontenedor .bloque .seg-tabs .seg-subcontenedor .seg-activo {
-          opacity: 1;
-          transform: translateY(0%); }
+          opacity: 1; }
     .tabs .subcontenedor .activo {
       opacity: 1;
       transform: translateY(0%); }

@@ -3,7 +3,19 @@
     padding: 0;
     background-color: nth($color-secun, 1);
     // Borrame!!!!
-    font-family: 'MagallanesLight';
+    font-family: 'TheSansRegular';
+
+    h1 {
+        font-family: 'MagallanesBold';
+    }
+
+    h2 {
+        font-family: 'MagallanesBold';
+    }
+
+    h3 {
+        font-family: 'MagallanesLight';
+    }
 }
 
 @font-face {

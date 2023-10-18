@@ -2,8 +2,12 @@
 
 const li = document.querySelectorAll('.li')
 const bloque = document.querySelectorAll('.bloque')
-const lista = document.querySelectorAll('.seg-li')
-const bloques = document.querySelectorAll('.seg-bloque')
+const liAp = document.querySelectorAll('.seg-ap-li')
+const bloqueAp = document.querySelectorAll('.seg-ap-bloque')
+const liAd = document.querySelectorAll('.seg-ad-li')
+const bloqueAd = document.querySelectorAll('.seg-ad-bloque')
+const liJo = document.querySelectorAll('.seg-jo-li')
+const bloqueJo = document.querySelectorAll('.seg-jo-bloque')
 //Recorriendo todos lo li
 li.forEach((cadaLi, i) => {
     //Asignando un Click a CADALI
@@ -20,13 +24,34 @@ li.forEach((cadaLi, i) => {
         bloque[i].classList.add('activo')
     })
 })
-lista.forEach((cadaLi, i) => {
-    lista[i].addEventListener('click', () => {
-        lista.forEach((cadaLi, i) => {
-            lista[i].classList.remove('seg-activo')
-            bloques[i].classList.remove('seg-activo')
+// liAp.forEach((cadaLi, i) => {
+//     liAp[i].addEventListener('click', () => {
+//         liAp.forEach((cadaLi, i) => {
+//             liAp[i].classList.remove('seg-activo')
+//             bloqueAp[i].classList.remove('seg-activo')
+//         })
+//         liAp[i].classList.add('seg-activo')
+//         bloqueAp[i].classList.add('seg-activo')
+//     })
+// })
+liJo.forEach((cadaLi, i) => {
+    liJo[i].addEventListener('click', () => {
+        liJo.forEach((cadaLi, i) => {
+            liJo[i].classList.remove('seg-activo')
+            bloqueJo[i].classList.remove('seg-activo')
         })
-        lista[i].classList.add('seg-activo')
-        bloques[i].classList.add('seg-activo')
+        liJo[i].classList.add('seg-activo')
+        bloqueJo[i].classList.add('seg-activo')
+    })
+})
+
+liAd.forEach((cadaLi, i) => {
+    liAd[i].addEventListener('click', () => {
+        liAd.forEach((cadaLi, i) => {
+            liAd[i].classList.remove('seg-activo')
+            bloqueAd[i].classList.remove('seg-activo')
+        })
+        liAd[i].classList.add('seg-activo')
+        bloqueAd[i].classList.add('seg-activo')
     })
 })

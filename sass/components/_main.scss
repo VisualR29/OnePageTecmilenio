@@ -1,5 +1,6 @@
 .hero {
     margin-bottom: 10vh;
+
     img {
         height: 100vh;
     }
@@ -28,14 +29,14 @@
                 font-size: 25px;
                 text-align: center;
                 background-color: nth($color-master , 3);
-                color: nth($color-master ,1);
+                color: nth($color-master , 1);
                 transition: all .5s ease;
             }
 
             .activo {
                 padding: 1.1em;
-                background-color: nth($color-master, 2);
-                color: nth($color-secun, 2);
+                background-color: nth($color-secun, 2);
+                color: nth($color-master, 4);
             }
         }
     }
@@ -54,7 +55,11 @@
             transition: all .5s ease;
 
             .informacion {
-                h2 {}
+                h2 {
+                    font-size: 60px;
+                    text-align: center;
+                    color: nth($color-master , 1);
+                }
 
                 p {}
 
@@ -62,147 +67,341 @@
             }
 
             .tabla-ap {
+                margin: 0 10em 0 10em;
                 display: grid;
-                grid-template-columns: .5fr repeat(2, 1fr);
+                grid-template-columns: .40fr 1fr .5fr;
                 grid-template-rows: .2fr 1fr;
                 grid-column-gap: 0px;
                 grid-row-gap: 0px;
 
                 .div1-ap {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
                 .div2-ap {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
                 .div3-ap {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
+
                 .div4-ap {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     div {
-                        a {}
+                        padding: 1em;
+                        width: 8em;
+                        text-align: center;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        background-color: nth($color-master, $n: 1);
+                        color: nth($color-master, 2);
                     }
                 }
 
                 .div5-ap {
-                    p {}
+                    p {
+                        margin: 1.5em 4em 0 4em;
+                        padding: 1em 3em 1em 3em;
+                        text-align: justify;
+                        font-size: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
-                .div6-ap {}
+                .div6-ap {
+                    pre {
+                        padding: 2em 9em 0 9em;
+                    }
+                }
             }
 
             .tabla-ad {
+                margin: 0 10em 0 10em;
                 display: grid;
-                grid-template-columns: .5fr repeat(2, 1fr);
+                grid-template-columns: .40fr 1fr .5fr;
                 grid-template-rows: .2fr repeat(3, 1fr);
                 grid-column-gap: 0px;
                 grid-row-gap: 0px;
 
                 .div1-ad {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
                 .div2-ad {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
                 .div3-ad {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
                 .div4-ad {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     div {
-                        a {}
+                        padding: 1em;
+                        width: 8em;
+                        text-align: center;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        background-color: nth($color-master, $n: 1);
+                        color: nth($color-master, 2);
                     }
                 }
 
                 .div5-ad {
-                    p {}
+                    p {
+                        margin: 1.5em 4em 0 4em;
+                        padding: 1em 3em 1em 3em;
+                        text-align: justify;
+                        font-size: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
-                .div6-ad {}
+                .div6-ad {
+                    pre {
+                        padding: 2em 9em 0 9em;
+                    }
+                }
 
                 .div7-ad {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     div {
-                        a {}
+                        padding: 1em;
+                        width: 8em;
+                        text-align: center;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        background-color: nth($color-master, $n: 1);
+                        color: nth($color-master, 2);
                     }
                 }
 
                 .div8-ad {
-                    p {}
+                    p {
+                        margin: 1.5em 4em 0 4em;
+                        padding: 1em 3em 1em 3em;
+                        text-align: justify;
+                        font-size: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
-                .div9-ad {}
+                .div9-ad {
+                    pre {
+                        padding: 2em 9em 0 9em;
+                    }
+                }
 
                 .div10-ad {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     div {
-                        a {}
+                        padding: 1em;
+                        width: 8em;
+                        text-align: center;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        background-color: nth($color-master, $n: 1);
+                        color: nth($color-master, 2);
                     }
                 }
 
                 .div11-ad {
-                    p {}
+                    p {
+                        margin: 1.5em 4em 0 4em;
+                        padding: 1em 3em 1em 3em;
+                        text-align: justify;
+                        font-size: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
-                .div12-ad {}
+                .div12-ad {
+                    pre {
+                        padding: 2em 9em 0 9em;
+                    }
+                }
             }
 
             .tabla-jo {
+                margin: 0 10em 0 10em;
                 display: grid;
-                grid-template-columns: .5fr repeat(2, 1fr);
+                grid-template-columns: .40fr 1fr .5fr;
                 grid-template-rows: .2fr repeat(3, 1fr);
                 grid-column-gap: 0px;
                 grid-row-gap: 0px;
 
                 .div1-jo {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
                 .div2-jo {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
                 .div3-jo {
-                    h3 {}
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                        color: nth($color-master , 4);
+                    }
                 }
 
                 .div4-jo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     div {
-                        a {}
+                        padding: 1em;
+                        width: 8em;
+                        text-align: center;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        background-color: nth($color-master, $n: 1);
+                        color: nth($color-master, 2);
                     }
                 }
 
                 .div5-jo {
-                    p {}
+                    p {
+                        margin: 1.5em 4em 0 4em;
+                        padding: 1em 3em 1em 3em;
+                        text-align: justify;
+                        font-size: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
-                .div6-jo {}
+                .div6-jo {
+                    pre {
+                        padding: 2em 9em 0 9em;
+                    }
+                }
 
                 .div7-jo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     div {
-                        a {}
+                        padding: 1em;
+                        width: 8em;
+                        text-align: center;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        background-color: nth($color-master, $n: 1);
+                        color: nth($color-master, 2);
                     }
                 }
 
                 .div8-jo {
-                    p {}
+                    p {
+                        margin: 1.5em 4em 0 4em;
+                        padding: 1em 3em 1em 3em;
+                        text-align: justify;
+                        font-size: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
-                .div9-jo {}
+                .div9-jo {
+                    pre {
+                        padding: 2em 9em 0 9em;
+                    }
+                }
 
                 .div10-jo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     div {
-                        a {}
+                        padding: 1em;
+                        width: 8em;
+                        text-align: center;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        background-color: nth($color-master, $n: 1);
+                        color: nth($color-master, 2);
                     }
                 }
 
                 .div11-jo {
-                    p {}
+                    p {
+                        margin: 1.5em 4em 0 4em;
+                        padding: 1em 3em 1em 3em;
+                        text-align: justify;
+                        font-size: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
-                .div12-jo {}
+                .div12-jo {
+                    pre {
+                        padding: 2em 9em 0 9em;
+                    }
+                }
             }
 
             .seg-tabs {
@@ -212,6 +411,7 @@
                     max-width: 120em;
 
                     .seg-ul {
+                        background-color: nth($color-master , 3);
                         list-style: none;
                         display: flex;
                         flex-flow: row nowrap;
@@ -219,37 +419,48 @@
                         align-items: center;
 
                         .seg-li {
-                            margin: 0 2em 0 0;
-                            padding: 1em;
-                            width: 15vh;
-                            height: 2em;
-                            font-size: 14px;
+                            margin: 0 1.6em 0 1.6em;
+                            padding: .8em;
+                            width: 6.7em;
+                            height: 1.8em;
+                            font-size: 18px;
                             text-align: center;
+                            background-color: nth($color-master , 3);
+                            color: nth($color-master , 1);
                             transition: all .5s ease;
                         }
 
-                        .seg-activo {}
+                        .seg-activo {
+                            padding: 1.1em;
+                            background-color: nth($color-master, 2);
+                            color: nth($color-secun, 2);
+                        }
                     }
                 }
 
                 .seg-subcontenedor {
-                    min-height: 10vh;
                     width: 90vw;
                     position: relative;
+                    background-color: nth($color-master , 2);
 
                     .seg-bloque {
-                        margin: 1em;
                         padding: 1em;
                         position: absolute;
                         top: 0;
                         opacity: 0;
-                        transform: translateY(50%);
+                        background-color: nth($color-master , 2);
                         transition: all .5s ease;
+
+                        h3 {
+                            font-size: 30px;
+                            text-align: center;
+                            background-color: nth($color-master , 2);
+                            color: nth($color-master , 1);
+                        }
                     }
 
                     .seg-activo {
                         opacity: 1;
-                        transform: translateY(0%);
                     }
                 }
             }
