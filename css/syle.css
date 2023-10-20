@@ -53,6 +53,249 @@
   font-family: 'serifPro'; }
 
 .hero {
-  margin-bottom: 10vh; }
-  .hero img {
-    height: 100vh; }
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 10vh;
+  background: linear-gradient(#007864, #f9f1e6);
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+  .hero .titulo {
+    grid-area: 1 / 1 / 5 / 7; }
+    .hero .titulo img {
+      width: 100%;
+      height: 100%; }
+  .hero .mision {
+    grid-area: 4 / 3 / 5 / 7;
+    font-size: 12px; }
+  .hero .imagen {
+    grid-area: 4 / 7 / 13 / 12; }
+    .hero .imagen img {
+      width: 100%;
+      height: 100%; }
+  .hero .caja1 {
+    border-radius: 5px;
+    background: #007864;
+    grid-area: 2 / 9 / 11 / 14;
+    transform: scale(0.5);
+    transition: 1s;
+    position: relative; }
+    .hero .caja1:hover {
+      z-index: 1;
+      box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
+      transform: scale(1); }
+      .hero .caja1:hover .aprendedores-normal {
+        opacity: 0; }
+      .hero .caja1:hover .aprendedores-activado {
+        opacity: 1;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); }
+        .hero .caja1:hover .aprendedores-activado .skilling {
+          transform: scaleX(1); }
+          .hero .caja1:hover .aprendedores-activado .skilling h3 {
+            padding: .6em 0 .6em 0;
+            font-size: 20px;
+            color: #00a598; }
+          .hero .caja1:hover .aprendedores-activado .skilling p {
+            font-size: 16px; }
+          .hero .caja1:hover .aprendedores-activado .skilling div a {
+            width: 30%;
+            padding: 1em 2em 1em 2em;
+            border-radius: 5px;
+            font-family: 'SerifPro';
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #00a598;
+            color: #f9f1e6; }
+    .hero .caja1 .aprendedores-normal {
+      position: absolute;
+      width: 100%; }
+      .hero .caja1 .aprendedores-normal h2 {
+        width: 100%;
+        padding: 1em 0 .6em 0;
+        text-align: center;
+        font-size: 40px;
+        color: #c3f7ee; }
+      .hero .caja1 .aprendedores-normal h3 {
+        padding: 1.5em;
+        font-size: 30px;
+        text-align: center;
+        color: #f9f1e6; }
+    .hero .caja1 .aprendedores-activado {
+      position: absolute;
+      opacity: 0; }
+  .hero .caja2 {
+    border-radius: 5px;
+    background: #00534c;
+    grid-area: 6 / 4 / 15 / 9;
+    transform: scale(0.5);
+    transition: 1s;
+    position: relative; }
+    .hero .caja2:hover {
+      z-index: 1;
+      box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
+      transform: scale(1);
+      transform: scaleX(2); }
+      .hero .caja2:hover .adultos-normal {
+        opacity: 0; }
+      .hero .caja2:hover .adultos-activado {
+        opacity: 1;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px; }
+        .hero .caja2:hover .adultos-activado .posgrado {
+          transform: scaleX(0.5); }
+          .hero .caja2:hover .adultos-activado .posgrado h3 {
+            padding: .6em 0 .6em 0;
+            font-size: 20px;
+            color: #78d64b; }
+          .hero .caja2:hover .adultos-activado .posgrado p {
+            width: 170%;
+            font-size: 16px;
+            text-align: center;
+            transform: translateX(-20%); }
+          .hero .caja2:hover .adultos-activado .posgrado div a {
+            width: 30%;
+            padding: 1em 2em 1em 2em;
+            border-radius: 5px;
+            font-family: 'SerifPro';
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #78d64b;
+            color: #f9f1e6; }
+        .hero .caja2:hover .adultos-activado .ejecutivo {
+          transform: scaleX(0.5); }
+          .hero .caja2:hover .adultos-activado .ejecutivo h3 {
+            padding: .6em 0 .6em 0;
+            font-size: 20px;
+            color: #78d64b; }
+          .hero .caja2:hover .adultos-activado .ejecutivo p {
+            width: 170%;
+            font-size: 16px;
+            text-align: center;
+            transform: translateX(-20%); }
+          .hero .caja2:hover .adultos-activado .ejecutivo div a {
+            width: 30%;
+            padding: 1em 2em 1em 2em;
+            border-radius: 5px;
+            font-family: 'SerifPro';
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #78d64b;
+            color: #f9f1e6; }
+        .hero .caja2:hover .adultos-activado .asociado {
+          transform: scaleX(0.5); }
+          .hero .caja2:hover .adultos-activado .asociado h3 {
+            padding: .6em 0 .6em 0;
+            font-size: 20px;
+            color: #e2243d; }
+          .hero .caja2:hover .adultos-activado .asociado p {
+            width: 170%;
+            font-size: 16px;
+            text-align: center;
+            transform: translateX(-20%); }
+          .hero .caja2:hover .adultos-activado .asociado div a {
+            width: 30%;
+            padding: 1em 2em 1em 2em;
+            border-radius: 5px;
+            font-family: 'SerifPro';
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #e2243d;
+            color: #f9f1e6; }
+    .hero .caja2 .adultos-normal {
+      position: absolute;
+      width: 100%; }
+      .hero .caja2 .adultos-normal h2 {
+        width: 100%;
+        padding: 1em 0 0 0;
+        text-align: center;
+        font-size: 40px;
+        color: #c3f7ee; }
+      .hero .caja2 .adultos-normal h3 {
+        padding: .8em 1.5em .8em 1.5em;
+        font-size: 30px;
+        text-align: center;
+        color: #f9f1e6; }
+    .hero .caja2 .adultos-activado {
+      position: absolute;
+      opacity: 0; }
+  .hero .caja3 {
+    border-radius: 5px;
+    background: #007864;
+    grid-area: 8 / 8 / 17 / 13;
+    transform: scale(0.5);
+    transition: 1s;
+    position: relative; }
+    .hero .caja3:hover {
+      z-index: 1;
+      box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
+      transform: scale(1);
+      transform: scaleX(1.1); }
+      .hero .caja3:hover .jovenes-normal {
+        opacity: 0; }
+      .hero .caja3:hover .jovenes-activado {
+        opacity: 1;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; }
+        .hero .caja3:hover .jovenes-activado .semestral {
+          transform: scaleX(0.9); }
+          .hero .caja3:hover .jovenes-activado .semestral h3 {
+            padding: .6em 0 .6em 0;
+            font-size: 20px;
+            color: #78d64b; }
+          .hero .caja3:hover .jovenes-activado .semestral p {
+            font-size: 16px; }
+          .hero .caja3:hover .jovenes-activado .semestral div a {
+            width: 30%;
+            padding: 1em 2em 1em 2em;
+            border-radius: 5px;
+            font-family: 'SerifPro';
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #78d64b;
+            color: #f9f1e6; }
+        .hero .caja3:hover .jovenes-activado .preparatoria h3 {
+          padding: .6em 0 .6em 0;
+          font-size: 20px;
+          color: #f68d2e;
+          transform: scaleX(0.9); }
+        .hero .caja3:hover .jovenes-activado .preparatoria p {
+          font-size: 16px; }
+        .hero .caja3:hover .jovenes-activado .preparatoria div {
+          transform: scaleX(0.9); }
+          .hero .caja3:hover .jovenes-activado .preparatoria div a {
+            width: 30%;
+            padding: 1em 2em 1em 2em;
+            border-radius: 5px;
+            font-family: 'SerifPro';
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #f68d2e;
+            color: #f9f1e6; }
+    .hero .caja3 .jovenes-normal {
+      position: absolute;
+      width: 100%; }
+      .hero .caja3 .jovenes-normal h2 {
+        width: 100%;
+        padding: 1em 0 0 0;
+        text-align: center;
+        font-size: 40px;
+        color: #c3f7ee; }
+      .hero .caja3 .jovenes-normal h3 {
+        padding: .8em 1.5em .8em 1.5em;
+        font-size: 30px;
+        text-align: center;
+        color: #f9f1e6; }
+    .hero .caja3 .jovenes-activado {
+      position: absolute;
+      opacity: 0; }
