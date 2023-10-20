@@ -35,7 +35,7 @@
     .caja1 {
         border-radius: 5px;
         background: nth($color-master, 4);
-        grid-area: 2 / 9 / 11 / 14;
+        grid-area: 1 / 9 / 11 / 14;
         transform: scale(.5);
         transition: 1s;
         position: relative;
@@ -45,7 +45,7 @@
             box-shadow:
                 -1px -1px 6px 0 rgb(92, 162, 235),
                 4px 4px 16px 2px rgb(122, 221, 102);
-            transform: scale(1);
+            transform: scaleY(.9) scaleX(1.1);
 
             .aprendedores-normal {
                 opacity: 0;
@@ -57,12 +57,12 @@
                 text-align: center;
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
+                transform: scaleX(.9);
 
                 .skilling {
-                    transform: scaleX(1);
 
                     h3 {
-                        padding: .6em 0 .6em 0;
+                        padding-top: .6em;
                         font-size: 20px;
                         color: #00a598;
                     }
@@ -72,6 +72,60 @@
                     }
 
                     div {
+                        h4 {
+                            font-size: 18px;
+                            color: #00a598;
+                        }
+
+                        ul {
+                            li {
+                                font-size: 14px;
+                            }
+
+                            .idiomas {
+                                transform: translateY(-13px);
+
+                                img {
+                                    margin-left: .1em;
+                                    width: 2.5em;
+                                    height: auto;
+                                    transform: translateY(12px);
+                                }
+                            }
+                        }
+                    }
+
+                    .modalidad {
+                        display: flex;
+                        justify-content: center;
+
+                        h4 {
+                            font-size: 18px;
+                            color: #00a598;
+                        }
+
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .contacto {
+                        display: flex;
+                        justify-content: center;
+
+                        h4 {
+                            font-size: 18px;
+                            color: #00a598;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .boton {
+                        margin-top: 1.5em;
 
                         a {
                             width: 30%;
@@ -79,7 +133,7 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 16px;
+                            font-size: 14px;
                             background-color: #00a598;
                             color: nth($color-secun , 1);
                         }
@@ -166,7 +220,7 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 16px;
+                            font-size: 14px;
                             background-color: nth($color-profe , 1);
                             color: nth($color-secun , 1);
                         }
@@ -197,7 +251,7 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 16px;
+                            font-size: 14px;
                             background-color: nth($color-profe , 1);
                             color: nth($color-secun , 1);
                         }
@@ -228,7 +282,7 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 16px;
+                            font-size: 14px;
                             background-color: #e2243d;
                             color: nth($color-secun , 1);
                         }
@@ -276,8 +330,7 @@
             box-shadow:
                 -1px -1px 6px 0 rgb(92, 162, 235),
                 4px 4px 16px 2px rgb(122, 221, 102);
-            transform: scale(1);
-            transform: scaleX(1.1);
+            transform: translateY(-20%) scaleX(1.5);
 
             .jovenes-normal {
                 opacity: 0;
@@ -290,21 +343,37 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
+                transform: scaleX(.5);
 
                 .semestral {
-                    transform: scaleX(.9);
 
                     h3 {
-                        padding: .6em 0 .6em 0;
                         font-size: 20px;
                         color: nth($color-profe , 1);
                     }
 
                     p {
+                        width: 150%;
                         font-size: 16px;
+                        text-align: center;
+                        transform: translateX(-13%);
                     }
 
                     div {
+                        h4 {}
+
+                        ul {
+                            li {}
+                        }
+                    }
+
+                    .modalidad {
+                        h4 {}
+
+                        p {}
+                    }
+
+                    .boton {
 
                         a {
                             width: 30%;
@@ -312,7 +381,7 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 16px;
+                            font-size: 14px;
                             background-color: nth($color-profe , 1);
                             color: nth($color-secun , 1);
                         }
@@ -320,19 +389,21 @@
                 }
 
                 .preparatoria {
+
                     h3 {
                         padding: .6em 0 .6em 0;
                         font-size: 20px;
                         color: nth($color-prepa , 1);
-                        transform: scaleX(.9);
                     }
 
                     p {
+                        width: 150%;
                         font-size: 16px;
+                        text-align: center;
+                        transform: translateX(-13%);
                     }
 
                     div {
-                        transform: scaleX(.9);
 
                         a {
                             width: 30%;
@@ -340,7 +411,7 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 16px;
+                            font-size: 14px;
                             background-color: nth($color-prepa , 1);
                             color: nth($color-secun , 1);
                         }
@@ -374,5 +445,49 @@
             opacity: 0;
         }
     }
-}
 
+    .slogan {
+        grid-area: 15 / 1 / 16 / 4;
+        font-size: 25px;
+        margin-left: 2em;
+        color: nth($color-master , 1);
+    }
+
+    .modelo {
+        grid-area: 10 / 14 / 16 / 17;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-size: 16px;
+            text-align: center;
+            color: nth($color-master , 1);
+        }
+
+        a {
+            text-align: center;
+            margin-top: .8em;
+
+            img {
+                width: 70%;
+            }
+        }
+
+        div {
+            margin-top: 1em;
+
+            a {
+                width: 30%;
+                padding: .5em 1em .5em 1em;
+                border-radius: 5px;
+                font-family: 'SerifPro';
+                text-decoration: none;
+                font-size: 14px;
+                background-color: nth($color-master , 1);
+                color: nth($color-secun , 1);
+            }
+        }
+    }
+}

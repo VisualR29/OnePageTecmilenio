@@ -12,61 +12,21 @@ h2 {
 h3 {
   font-family: 'MagallanesBold'; }
 
-@font-face {
-  font-family: 'MagallanesLigth';
-  src: url(./../sources/Magallanes/MagallanesLight.ttf); }
-
-@font-face {
-  font-family: 'MagallanesBold';
-  src: url(./../../sources/Magallanes/MagallanesBold.ttf); }
-
-@font-face {
-  font-family: 'TheSansLight';
-  src: url(./../sources/the-sans-light/TheSansLight-Plain.otf); }
-
-@font-face {
-  font-family: 'TheSansRegular';
-  src: url(./../sources/the-sans-regular/TheSansRegular.otf); }
-
-@font-face {
-  font-family: 'TheSansBold';
-  src: url(./../sources/the-sans-bold-bold-plain_VSnvw/TheSansBoldBoldPlain.ttf); }
-
-@font-face {
-  font-family: 'SerifPro';
-  src: url(./../sources/amor-serif-text-pro-regular_NLN4g/AmorSerifTextProRegular.otf); }
-
-.fontMagallanesLight {
-  font-family: 'MagallanesLigth'; }
-
-.fontMagallanesBold {
-  font-family: 'MagallanesBold'; }
-
-.fontSansLight {
-  font-family: 'TheSansLight'; }
-
-.fontSansRegular {
-  font-family: 'TheSansRegular'; }
-
-.fontSansBold {
-  font-family: 'TheSansBold'; }
-
-.fontSerifPro {
-  font-family: 'SerifPro'; }
-
-* {
-  margin: 0;
-  padding: 0;
+h4 {
   font-family: 'MagallanesLight'; }
 
-h1 {
-  font-family: 'MagallanesBold'; }
+p {
+  color: #f9f1e6;
+  font-family: 'TheSansLight';
+  font-size: 12px; }
 
-h2 {
-  font-family: 'MagallanesBold'; }
+ul {
+  list-style: none; }
 
-h3 {
-  font-family: 'MagallanesBold'; }
+li {
+  color: #f9f1e6;
+  font-family: 'TheSansLight';
+  font-size: 12px; }
 
 @font-face {
   font-family: 'MagallanesLigth';
@@ -136,14 +96,14 @@ h3 {
   .hero .caja1 {
     border-radius: 5px;
     background: #007864;
-    grid-area: 2 / 9 / 11 / 14;
+    grid-area: 1 / 9 / 11 / 14;
     transform: scale(0.5);
     transition: 1s;
     position: relative; }
     .hero .caja1:hover {
       z-index: 1;
       box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
-      transform: scale(1); }
+      transform: scaleY(0.9) scaleX(1.1); }
       .hero .caja1:hover .aprendedores-normal {
         opacity: 0; }
       .hero .caja1:hover .aprendedores-activado {
@@ -151,22 +111,51 @@ h3 {
         width: 100%;
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(1, 1fr); }
-        .hero .caja1:hover .aprendedores-activado .skilling {
-          transform: scaleX(1); }
-          .hero .caja1:hover .aprendedores-activado .skilling h3 {
-            padding: .6em 0 .6em 0;
-            font-size: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        transform: scaleX(0.9); }
+        .hero .caja1:hover .aprendedores-activado .skilling h3 {
+          padding-top: .6em;
+          font-size: 20px;
+          color: #00a598; }
+        .hero .caja1:hover .aprendedores-activado .skilling p {
+          font-size: 16px; }
+        .hero .caja1:hover .aprendedores-activado .skilling div h4 {
+          font-size: 18px;
+          color: #00a598; }
+        .hero .caja1:hover .aprendedores-activado .skilling div ul li {
+          font-size: 14px; }
+        .hero .caja1:hover .aprendedores-activado .skilling div ul .idiomas {
+          transform: translateY(-13px); }
+          .hero .caja1:hover .aprendedores-activado .skilling div ul .idiomas img {
+            margin-left: .1em;
+            width: 2.5em;
+            height: auto;
+            transform: translateY(12px); }
+        .hero .caja1:hover .aprendedores-activado .skilling .modalidad {
+          display: flex;
+          justify-content: center; }
+          .hero .caja1:hover .aprendedores-activado .skilling .modalidad h4 {
+            font-size: 18px;
             color: #00a598; }
-          .hero .caja1:hover .aprendedores-activado .skilling p {
-            font-size: 16px; }
-          .hero .caja1:hover .aprendedores-activado .skilling div a {
+          .hero .caja1:hover .aprendedores-activado .skilling .modalidad p {
+            font-size: 14px; }
+        .hero .caja1:hover .aprendedores-activado .skilling .contacto {
+          display: flex;
+          justify-content: center; }
+          .hero .caja1:hover .aprendedores-activado .skilling .contacto h4 {
+            font-size: 18px;
+            color: #00a598; }
+          .hero .caja1:hover .aprendedores-activado .skilling .contacto p {
+            font-size: 14px; }
+        .hero .caja1:hover .aprendedores-activado .skilling .boton {
+          margin-top: 1.5em; }
+          .hero .caja1:hover .aprendedores-activado .skilling .boton a {
             width: 30%;
             padding: 1em 2em 1em 2em;
             border-radius: 5px;
             font-family: 'SerifPro';
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             background-color: #00a598;
             color: #f9f1e6; }
     .hero .caja1 .aprendedores-normal {
@@ -224,7 +213,7 @@ h3 {
             border-radius: 5px;
             font-family: 'SerifPro';
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             background-color: #78d64b;
             color: #f9f1e6; }
         .hero .caja2:hover .adultos-activado .ejecutivo {
@@ -244,7 +233,7 @@ h3 {
             border-radius: 5px;
             font-family: 'SerifPro';
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             background-color: #78d64b;
             color: #f9f1e6; }
         .hero .caja2:hover .adultos-activado .asociado {
@@ -264,7 +253,7 @@ h3 {
             border-radius: 5px;
             font-family: 'SerifPro';
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             background-color: #e2243d;
             color: #f9f1e6; }
     .hero .caja2 .adultos-normal {
@@ -294,8 +283,7 @@ h3 {
     .hero .caja3:hover {
       z-index: 1;
       box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
-      transform: scale(1);
-      transform: scaleX(1.1); }
+      transform: translateY(-20%) scaleX(1.5); }
       .hero .caja3:hover .jovenes-normal {
         opacity: 0; }
       .hero .caja3:hover .jovenes-activado {
@@ -304,42 +292,43 @@ h3 {
         text-align: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px; }
-        .hero .caja3:hover .jovenes-activado .semestral {
-          transform: scaleX(0.9); }
-          .hero .caja3:hover .jovenes-activado .semestral h3 {
-            padding: .6em 0 .6em 0;
-            font-size: 20px;
-            color: #78d64b; }
-          .hero .caja3:hover .jovenes-activado .semestral p {
-            font-size: 16px; }
-          .hero .caja3:hover .jovenes-activado .semestral div a {
-            width: 30%;
-            padding: 1em 2em 1em 2em;
-            border-radius: 5px;
-            font-family: 'SerifPro';
-            text-decoration: none;
-            font-size: 16px;
-            background-color: #78d64b;
-            color: #f9f1e6; }
+        gap: 10px;
+        transform: scaleX(0.5); }
+        .hero .caja3:hover .jovenes-activado .semestral h3 {
+          font-size: 20px;
+          color: #78d64b; }
+        .hero .caja3:hover .jovenes-activado .semestral p {
+          width: 150%;
+          font-size: 16px;
+          text-align: center;
+          transform: translateX(-13%); }
+        .hero .caja3:hover .jovenes-activado .semestral .boton a {
+          width: 30%;
+          padding: 1em 2em 1em 2em;
+          border-radius: 5px;
+          font-family: 'SerifPro';
+          text-decoration: none;
+          font-size: 14px;
+          background-color: #78d64b;
+          color: #f9f1e6; }
         .hero .caja3:hover .jovenes-activado .preparatoria h3 {
           padding: .6em 0 .6em 0;
           font-size: 20px;
-          color: #f68d2e;
-          transform: scaleX(0.9); }
+          color: #f68d2e; }
         .hero .caja3:hover .jovenes-activado .preparatoria p {
-          font-size: 16px; }
-        .hero .caja3:hover .jovenes-activado .preparatoria div {
-          transform: scaleX(0.9); }
-          .hero .caja3:hover .jovenes-activado .preparatoria div a {
-            width: 30%;
-            padding: 1em 2em 1em 2em;
-            border-radius: 5px;
-            font-family: 'SerifPro';
-            text-decoration: none;
-            font-size: 16px;
-            background-color: #f68d2e;
-            color: #f9f1e6; }
+          width: 150%;
+          font-size: 16px;
+          text-align: center;
+          transform: translateX(-13%); }
+        .hero .caja3:hover .jovenes-activado .preparatoria div a {
+          width: 30%;
+          padding: 1em 2em 1em 2em;
+          border-radius: 5px;
+          font-family: 'SerifPro';
+          text-decoration: none;
+          font-size: 14px;
+          background-color: #f68d2e;
+          color: #f9f1e6; }
     .hero .caja3 .jovenes-normal {
       position: absolute;
       width: 100%; }
@@ -357,3 +346,34 @@ h3 {
     .hero .caja3 .jovenes-activado {
       position: absolute;
       opacity: 0; }
+  .hero .slogan {
+    grid-area: 15 / 1 / 16 / 4;
+    font-size: 25px;
+    margin-left: 2em;
+    color: #00534c; }
+  .hero .modelo {
+    grid-area: 10 / 14 / 16 / 17;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .hero .modelo h3 {
+      font-size: 16px;
+      text-align: center;
+      color: #00534c; }
+    .hero .modelo a {
+      text-align: center;
+      margin-top: .8em; }
+      .hero .modelo a img {
+        width: 70%; }
+    .hero .modelo div {
+      margin-top: 1em; }
+      .hero .modelo div a {
+        width: 30%;
+        padding: .5em 1em .5em 1em;
+        border-radius: 5px;
+        font-family: 'SerifPro';
+        text-decoration: none;
+        font-size: 14px;
+        background-color: #00534c;
+        color: #f9f1e6; }
