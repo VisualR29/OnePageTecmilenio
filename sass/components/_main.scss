@@ -34,7 +34,7 @@
 
     .caja1 {
         border-radius: 5px;
-        background: nth($color-master, 4);
+        background: nth($color-master, 1);
         grid-area: 1 / 9 / 11 / 14;
         transform: scale(.5);
         transition: 1s;
@@ -170,7 +170,7 @@
 
     .caja2 {
         border-radius: 5px;
-        background: nth($color-master, 1);
+        background: nth($color-master, 4);
         grid-area: 6 / 4 / 15 / 9;
         transform: scale(.5);
         transition: 1s;
@@ -319,8 +319,8 @@
 
     .caja3 {
         border-radius: 5px;
-        background: nth($color-master, 4);
-        grid-area: 8 / 8 / 17 / 13;
+        background: nth($color-master, 1);
+        grid-area: 6 / 8 / 17 / 13;
         transform: scale(.5);
         transition: 1s;
         position: relative;
@@ -343,37 +343,54 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
-                transform: scaleX(.5);
+                transform: scaleX(.5) scaleY(.65);
 
                 .semestral {
+                    width: 110%;
+                    transform: translateX(-40%) translateY(-30%);
 
                     h3 {
-                        font-size: 20px;
+                        padding-top: .6em;
+                        font-size: 30px;
                         color: nth($color-profe , 1);
                     }
 
                     p {
-                        width: 150%;
-                        font-size: 16px;
-                        text-align: center;
-                        transform: translateX(-13%);
+                        font-size: 24px;
                     }
 
                     div {
-                        h4 {}
+                        h4 {
+                            font-size: 27px;
+                            color: nth($color-profe , 1);
+                        }
 
                         ul {
-                            li {}
+                            li {
+                                font-size: 21px;
+                            }
                         }
                     }
 
                     .modalidad {
-                        h4 {}
+                        display: flex;
+                        justify-content: center;
+                        margin-top: .5em;
 
-                        p {}
+                        h4 {
+                            font-size: 27px;
+                            color: nth($color-profe , 1);
+                        }
+
+
+                        p {
+                            font-size: 21px;
+                        }
                     }
 
                     .boton {
+                        margin-top: 1.5em;
+                        transform: translateY(170%);
 
                         a {
                             width: 30%;
@@ -381,7 +398,7 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 14px;
+                            font-size: 21px;
                             background-color: nth($color-profe , 1);
                             color: nth($color-secun , 1);
                         }
@@ -389,21 +406,51 @@
                 }
 
                 .preparatoria {
+                    width: 180%;
+                    transform: translateX(-35%) translateY(-30%);
 
                     h3 {
-                        padding: .6em 0 .6em 0;
-                        font-size: 20px;
+                        padding-top: .6em;
+                        font-size: 30px;
                         color: nth($color-prepa , 1);
                     }
 
                     p {
-                        width: 150%;
-                        font-size: 16px;
-                        text-align: center;
-                        transform: translateX(-13%);
+                        font-size: 24px;
                     }
 
                     div {
+                        h4 {
+                            font-size: 27px;
+                            color: nth($color-prepa , 1);
+                        }
+
+                        ul {
+                            li {
+                                font-size: 21px;
+                            }
+                        }
+                    }
+
+                    .modalidad {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: .5em;
+
+                        h4 {
+                            font-size: 27px;
+                            color: nth($color-prepa, 1);
+                        }
+
+
+                        p {
+                            font-size: 21px;
+                        }
+                    }
+
+                    .boton {
+                        margin-top: 1.5em;
+                        transform: translateY(1100%);
 
                         a {
                             width: 30%;
@@ -411,10 +458,26 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 14px;
+                            font-size: 21px;
                             background-color: nth($color-prepa , 1);
                             color: nth($color-secun , 1);
                         }
+                    }
+                }
+
+                .contacto {
+                    width: 130%;
+                    display: flex;
+                    justify-content: center;
+                    transform: translateY(-300%) translateX(-0%);
+
+                    h4 {
+                        font-size: 27px;
+                        color: nth($color-prepa, 1);
+                    }
+
+                    p {
+                        font-size: 21px;
                     }
                 }
             }
