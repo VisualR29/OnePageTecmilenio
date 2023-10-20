@@ -185,8 +185,7 @@ li {
     .hero .caja2:hover {
       z-index: 1;
       box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
-      transform: scale(1);
-      transform: scaleX(2); }
+      transform: scaleY(1.5) scaleX(2.5) translateY(-10%) translateX(20%); }
       .hero .caja2:hover .adultos-normal {
         opacity: 0; }
       .hero .caja2:hover .adultos-activado {
@@ -195,19 +194,64 @@ li {
         text-align: center;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 5px; }
-        .hero .caja2:hover .adultos-activado .posgrado {
-          transform: scaleX(0.5); }
-          .hero .caja2:hover .adultos-activado .posgrado h3 {
-            padding: .6em 0 .6em 0;
-            font-size: 20px;
+        gap: 5px;
+        transform: scaleX(0.4) scaleY(0.66) translateY(-30%) translateX(-70%); }
+        .hero .caja2:hover .adultos-activado .posgrado h3 {
+          padding-top: .6em;
+          font-size: 20px;
+          color: #78d64b; }
+        .hero .caja2:hover .adultos-activado .posgrado p {
+          font-size: 16px; }
+        .hero .caja2:hover .adultos-activado .posgrado div {
+          display: flex; }
+          .hero .caja2:hover .adultos-activado .posgrado div .posgr div h4 {
+            font-size: 18px;
             color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .posgrado p {
-            width: 170%;
-            font-size: 16px;
-            text-align: center;
-            transform: translateX(-20%); }
-          .hero .caja2:hover .adultos-activado .posgrado div a {
+          .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul {
+            font-size: 16px; }
+            .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li {
+              font-size: 14px; }
+              .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li ul {
+                font-size: 16px; }
+                .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li ul li {
+                  font-size: 14px; }
+          .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad {
+            display: flex;
+            justify-content: center; }
+            .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad h4 {
+              font-size: 18px;
+              color: #78d64b; }
+            .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad p {
+              font-size: 14px; }
+          .hero .caja2:hover .adultos-activado .posgrado div .maste div h4 {
+            font-size: 18px;
+            color: #78d64b; }
+          .hero .caja2:hover .adultos-activado .posgrado div .maste div ul li {
+            font-size: 14px; }
+          .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad {
+            display: flex;
+            justify-content: center; }
+            .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad h4 {
+              font-size: 18px;
+              color: #78d64b; }
+            .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad p {
+              font-size: 14px; }
+          .hero .caja2:hover .adultos-activado .posgrado div .espec div h4 {
+            font-size: 18px;
+            color: #78d64b; }
+          .hero .caja2:hover .adultos-activado .posgrado div .espec div ul li {
+            font-size: 14px; }
+          .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad {
+            display: flex;
+            justify-content: center; }
+            .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad h4 {
+              font-size: 18px;
+              color: #78d64b; }
+            .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad p {
+              font-size: 14px; }
+        .hero .caja2:hover .adultos-activado .posgrado .boton {
+          margin-top: 1.5em; }
+          .hero .caja2:hover .adultos-activado .posgrado .boton a {
             width: 30%;
             padding: 1em 2em 1em 2em;
             border-radius: 5px;
@@ -216,18 +260,31 @@ li {
             font-size: 14px;
             background-color: #78d64b;
             color: #f9f1e6; }
-        .hero .caja2:hover .adultos-activado .ejecutivo {
-          transform: scaleX(0.5); }
-          .hero .caja2:hover .adultos-activado .ejecutivo h3 {
-            padding: .6em 0 .6em 0;
-            font-size: 20px;
+        .hero .caja2:hover .adultos-activado .ejecutivo h3 {
+          padding: .6em 0 .6em 0;
+          font-size: 20px;
+          color: #78d64b; }
+        .hero .caja2:hover .adultos-activado .ejecutivo p {
+          width: 170%;
+          font-size: 16px;
+          text-align: center;
+          transform: translateX(-20%); }
+        .hero .caja2:hover .adultos-activado .ejecutivo div h4 {
+          font-size: 18px;
+          color: #78d64b; }
+        .hero .caja2:hover .adultos-activado .ejecutivo div ul li {
+          font-size: 14px; }
+        .hero .caja2:hover .adultos-activado .ejecutivo .modalidad {
+          display: flex;
+          justify-content: center; }
+          .hero .caja2:hover .adultos-activado .ejecutivo .modalidad h4 {
+            font-size: 18px;
             color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .ejecutivo p {
-            width: 170%;
-            font-size: 16px;
-            text-align: center;
-            transform: translateX(-20%); }
-          .hero .caja2:hover .adultos-activado .ejecutivo div a {
+          .hero .caja2:hover .adultos-activado .ejecutivo .modalidad p {
+            font-size: 14px; }
+        .hero .caja2:hover .adultos-activado .ejecutivo .boton {
+          margin-top: 1.5em; }
+          .hero .caja2:hover .adultos-activado .ejecutivo .boton a {
             width: 30%;
             padding: 1em 2em 1em 2em;
             border-radius: 5px;
@@ -236,18 +293,31 @@ li {
             font-size: 14px;
             background-color: #78d64b;
             color: #f9f1e6; }
-        .hero .caja2:hover .adultos-activado .asociado {
-          transform: scaleX(0.5); }
-          .hero .caja2:hover .adultos-activado .asociado h3 {
-            padding: .6em 0 .6em 0;
-            font-size: 20px;
+        .hero .caja2:hover .adultos-activado .asociado h3 {
+          padding: .6em 0 .6em 0;
+          font-size: 20px;
+          color: #e2243d; }
+        .hero .caja2:hover .adultos-activado .asociado p {
+          width: 170%;
+          font-size: 16px;
+          text-align: center;
+          transform: translateX(-20%); }
+        .hero .caja2:hover .adultos-activado .asociado div h4 {
+          font-size: 18px;
+          color: #e2243d; }
+        .hero .caja2:hover .adultos-activado .asociado div ul li {
+          font-size: 14px; }
+        .hero .caja2:hover .adultos-activado .asociado .modalidad {
+          display: flex;
+          justify-content: center; }
+          .hero .caja2:hover .adultos-activado .asociado .modalidad h4 {
+            font-size: 18px;
             color: #e2243d; }
-          .hero .caja2:hover .adultos-activado .asociado p {
-            width: 170%;
-            font-size: 16px;
-            text-align: center;
-            transform: translateX(-20%); }
-          .hero .caja2:hover .adultos-activado .asociado div a {
+          .hero .caja2:hover .adultos-activado .asociado .modalidad p {
+            font-size: 14px; }
+        .hero .caja2:hover .adultos-activado .asociado .boton {
+          margin-top: 1.5em; }
+          .hero .caja2:hover .adultos-activado .asociado .boton a {
             width: 30%;
             padding: 1em 2em 1em 2em;
             border-radius: 5px;

@@ -181,8 +181,7 @@
             box-shadow:
                 -1px -1px 6px 0 rgb(92, 162, 235),
                 4px 4px 16px 2px rgb(122, 221, 102);
-            transform: scale(1);
-            transform: scaleX(2);
+            transform: scaleY(1.5) scaleX(2.5) translateY(-10%) translateX(20%);
 
             .adultos-normal {
                 opacity: 0;
@@ -195,24 +194,132 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 5px;
+                transform: scaleX(.4) scaleY(.66) translateY(-30%) translateX(-70%);
 
                 .posgrado {
-                    transform: scaleX(.5);
 
                     h3 {
-                        padding: .6em 0 .6em 0;
+                        padding-top: .6em;
                         font-size: 20px;
                         color: nth($color-profe , 1);
                     }
 
                     p {
-                        width: 170%;
                         font-size: 16px;
-                        text-align: center;
-                        transform: translateX(-20%);
                     }
 
                     div {
+                        display: flex;
+
+                        .posgr {
+                            div {
+
+                                h4 {
+                                    font-size: 18px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                ul {
+                                    font-size: 16px;
+
+                                    li {
+                                        font-size: 14px;
+
+                                        ul {
+                                            font-size: 16px;
+
+                                            li {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .modalidad {
+                                display: flex;
+                                justify-content: center;
+
+                                h4 {
+                                    font-size: 18px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .maste {
+                            div {
+
+                                h4 {
+                                    font-size: 18px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                ul {
+
+                                    li {
+                                        font-size: 14px;
+
+                                    }
+                                }
+                            }
+
+                            .modalidad {
+                                display: flex;
+                                justify-content: center;
+
+                                h4 {
+                                    font-size: 18px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+
+                        }
+
+                        .espec {
+                            div {
+
+                                h4 {
+                                    font-size: 18px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                ul {
+
+                                    li {
+                                        font-size: 14px;
+
+                                    }
+                                }
+                            }
+
+                            .modalidad {
+                                display: flex;
+                                justify-content: center;
+
+                                h4 {
+                                    font-size: 18px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .boton {
+                        margin-top: 1.5em;
 
                         a {
                             width: 30%;
@@ -225,10 +332,10 @@
                             color: nth($color-secun , 1);
                         }
                     }
+
                 }
 
                 .ejecutivo {
-                    transform: scaleX(.5);
 
                     h3 {
                         padding: .6em 0 .6em 0;
@@ -244,6 +351,37 @@
                     }
 
                     div {
+
+                        h4 {
+                            font-size: 18px;
+                            color: nth($color-profe , 1);
+                        }
+
+                        ul {
+
+                            li {
+                                font-size: 14px;
+
+                            }
+                        }
+                    }
+
+                    .modalidad {
+                        display: flex;
+                        justify-content: center;
+
+                        h4 {
+                            font-size: 18px;
+                            color: nth($color-profe , 1);
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .boton {
+                        margin-top: 1.5em;
 
                         a {
                             width: 30%;
@@ -259,7 +397,6 @@
                 }
 
                 .asociado {
-                    transform: scaleX(.5);
 
                     h3 {
                         padding: .6em 0 .6em 0;
@@ -275,6 +412,37 @@
                     }
 
                     div {
+
+                        h4 {
+                            font-size: 18px;
+                            color: #e2243d;
+                        }
+
+                        ul {
+
+                            li {
+                                font-size: 14px;
+
+                            }
+                        }
+                    }
+
+                    .modalidad {
+                        display: flex;
+                        justify-content: center;
+
+                        h4 {
+                            font-size: 18px;
+                            color: #e2243d;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .boton {
+                        margin-top: 1.5em;
 
                         a {
                             width: 30%;
