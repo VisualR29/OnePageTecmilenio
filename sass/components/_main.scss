@@ -196,207 +196,8 @@
                 gap: 5px;
                 transform: scaleX(.4) scaleY(.66) translateY(-30%) translateX(-70%);
 
-                .posgrado {
-
-                    h3 {
-                        padding-top: .6em;
-                        font-size: 20px;
-                        color: nth($color-profe , 1);
-                    }
-
-                    p {
-                        font-size: 16px;
-                    }
-
-                    div {
-                        display: flex;
-
-                        .posgr {
-                            div {
-
-                                h4 {
-                                    font-size: 18px;
-                                    color: nth($color-profe , 1);
-                                }
-
-                                ul {
-                                    font-size: 16px;
-
-                                    li {
-                                        font-size: 14px;
-
-                                        ul {
-                                            font-size: 16px;
-
-                                            li {
-                                                font-size: 14px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            .modalidad {
-                                display: flex;
-                                justify-content: center;
-
-                                h4 {
-                                    font-size: 18px;
-                                    color: nth($color-profe , 1);
-                                }
-
-                                p {
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-
-                        .maste {
-                            div {
-
-                                h4 {
-                                    font-size: 18px;
-                                    color: nth($color-profe , 1);
-                                }
-
-                                ul {
-
-                                    li {
-                                        font-size: 14px;
-
-                                    }
-                                }
-                            }
-
-                            .modalidad {
-                                display: flex;
-                                justify-content: center;
-
-                                h4 {
-                                    font-size: 18px;
-                                    color: nth($color-profe , 1);
-                                }
-
-                                p {
-                                    font-size: 14px;
-                                }
-                            }
-
-                        }
-
-                        .espec {
-                            div {
-
-                                h4 {
-                                    font-size: 18px;
-                                    color: nth($color-profe , 1);
-                                }
-
-                                ul {
-
-                                    li {
-                                        font-size: 14px;
-
-                                    }
-                                }
-                            }
-
-                            .modalidad {
-                                display: flex;
-                                justify-content: center;
-
-                                h4 {
-                                    font-size: 18px;
-                                    color: nth($color-profe , 1);
-                                }
-
-                                p {
-                                    font-size: 14px;
-                                }
-                            }
-
-                        }
-                    }
-
-                    .boton {
-                        margin-top: 1.5em;
-
-                        a {
-                            width: 30%;
-                            padding: 1em 2em 1em 2em;
-                            border-radius: 5px;
-                            font-family: 'SerifPro';
-                            text-decoration: none;
-                            font-size: 14px;
-                            background-color: nth($color-profe , 1);
-                            color: nth($color-secun , 1);
-                        }
-                    }
-
-                }
-
-                .ejecutivo {
-
-                    h3 {
-                        padding: .6em 0 .6em 0;
-                        font-size: 20px;
-                        color: nth($color-profe , 1);
-                    }
-
-                    p {
-                        width: 170%;
-                        font-size: 16px;
-                        text-align: center;
-                        transform: translateX(-20%);
-                    }
-
-                    div {
-
-                        h4 {
-                            font-size: 18px;
-                            color: nth($color-profe , 1);
-                        }
-
-                        ul {
-
-                            li {
-                                font-size: 14px;
-
-                            }
-                        }
-                    }
-
-                    .modalidad {
-                        display: flex;
-                        justify-content: center;
-
-                        h4 {
-                            font-size: 18px;
-                            color: nth($color-profe , 1);
-                        }
-
-                        p {
-                            font-size: 14px;
-                        }
-                    }
-
-                    .boton {
-                        margin-top: 1.5em;
-
-                        a {
-                            width: 30%;
-                            padding: 1em 2em 1em 2em;
-                            border-radius: 5px;
-                            font-family: 'SerifPro';
-                            text-decoration: none;
-                            font-size: 14px;
-                            background-color: nth($color-profe , 1);
-                            color: nth($color-secun , 1);
-                        }
-                    }
-                }
-
                 .asociado {
+                    transform: translateX(30%) translateY(5%);
 
                     h3 {
                         padding: .6em 0 .6em 0;
@@ -406,7 +207,7 @@
 
                     p {
                         width: 170%;
-                        font-size: 16px;
+                        font-size: 14px;
                         text-align: center;
                         transform: translateX(-20%);
                     }
@@ -414,14 +215,15 @@
                     div {
 
                         h4 {
-                            font-size: 18px;
+                            font-size: 16px;
                             color: #e2243d;
                         }
 
                         ul {
+                            list-style: initial;
 
                             li {
-                                font-size: 14px;
+                                font-size: 12px;
 
                             }
                         }
@@ -429,15 +231,16 @@
 
                     .modalidad {
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
 
                         h4 {
-                            font-size: 18px;
+                            font-size: 16px;
                             color: #e2243d;
                         }
 
                         p {
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                     }
 
@@ -450,10 +253,279 @@
                             border-radius: 5px;
                             font-family: 'SerifPro';
                             text-decoration: none;
-                            font-size: 14px;
+                            font-size: 12px;
                             background-color: #e2243d;
                             color: nth($color-secun , 1);
                         }
+                    }
+                }
+
+                .posgrado {
+                    transform: translateX(40%) translateY(5%);
+                    width: 150%;
+
+                    h3 {
+                        padding-top: .6em;
+                        font-size: 20px;
+                        color: nth($color-profe , 1);
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    div {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 20px;
+
+                        .posgr {
+                            display: flex;
+                            flex-direction: column;
+
+                            div {
+                                display: flex;
+                                flex-direction: column;
+
+                                h3 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                h4 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                ul {
+                                    font-size: 14px;
+                                    list-style: initial;
+
+                                    li {
+                                        font-size: 12px;
+
+                                        ul {
+                                            font-size: 10px;
+                                            list-style: circle;
+
+                                            li {
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .modalidad {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                h4 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                    transform: translateY(-60%);
+                                }
+
+                                p {
+                                    width: 140%;
+                                    transform: translateY(-120%) translateX(-15%);
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        .maste {
+                            display: flex;
+                            flex-direction: column;
+
+                            div {
+                                display: flex;
+                                flex-direction: column;
+
+                                h3 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                h4 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                ul {
+                                    list-style: initial;
+
+                                    li {
+                                        font-size: 12px;
+
+                                    }
+                                }
+                            }
+
+                            .modalidad {
+                                display: flex;
+                                justify-content: center;
+
+                                h4 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                    transform: translateY(140%);
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    transform: translateY(80%);
+                                }
+                            }
+
+                        }
+
+                        .espec {
+                            display: flex;
+                            flex-direction: column;
+
+                            div {
+                                display: flex;
+                                flex-direction: column;
+
+                                h3 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                h4 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                ul {
+                                    list-style: initial;
+
+                                    li {
+                                        font-size: 12px;
+
+                                    }
+                                }
+                            }
+
+                            .modalidad {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                transform: translateY(240%);
+
+                                h4 {
+                                    font-size: 16px;
+                                    color: nth($color-profe , 1);
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+
+                        }
+                    }
+
+                    .boton {
+                        margin-top: 1.5em;
+                        display: flex;
+                        justify-content: center;
+
+                        a {
+                            width: 30%;
+                            padding: 1em 2em 1em 2em;
+                            border-radius: 5px;
+                            font-family: 'SerifPro';
+                            text-decoration: none;
+                            font-size: 12px;
+                            background-color: nth($color-profe , 1);
+                            color: nth($color-secun , 1);
+                            transform: translateY(-70%);
+                        }
+                    }
+
+                }
+
+                .ejecutivo {
+                    transform: translateX(450%) translateY(5%);
+
+                    h3 {
+                        padding: .6em 0 .6em 0;
+                        font-size: 20px;
+                        color: nth($color-profe , 1);
+                    }
+
+                    p {
+                        width: 170%;
+                        font-size: 14px;
+                        text-align: center;
+                        transform: translateX(-20%);
+                    }
+
+                    div {
+                        width: 150%;
+                        transform: translateX(-17%);
+
+                        h4 {
+                            font-size: 16px;
+                            color: nth($color-profe , 1);
+                        }
+
+                        ul {
+                            list-style: initial;
+
+                            li {
+                                font-size: 12px;
+
+                            }
+                        }
+                    }
+
+                    .modalidad {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        h4 {
+                            font-size: 16px;
+                            color: nth($color-profe , 1);
+                        }
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .boton {
+                        margin-top: 1.5em;
+
+                        a {
+                            width: 30%;
+                            padding: 1em 2em 1em 2em;
+                            border-radius: 5px;
+                            font-family: 'SerifPro';
+                            text-decoration: none;
+                            font-size: 12px;
+                            background-color: nth($color-profe , 1);
+                            color: nth($color-secun , 1);
+                        }
+                    }
+                }
+
+                .contacto {
+                    transform: translateY(-40%);
+                    transform: translateX(20%);
+
+                    h4 {
+                        font-size: 16px;
+                        color: nth($color-profe , 1);
+                    }
+
+                    p {
+                        font-size: 12px;
                     }
                 }
             }
@@ -637,7 +709,7 @@
                     width: 130%;
                     display: flex;
                     justify-content: center;
-                    transform: translateY(-300%) translateX(-0%);
+                    transform: translateY(-300%);
 
                     h4 {
                         font-size: 27px;

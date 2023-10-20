@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'MagallanesLight'; }
+  font-family: 'TheSansLight'; }
 
 h1 {
   font-family: 'MagallanesBold'; }
@@ -196,136 +196,207 @@ li {
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
         transform: scaleX(0.4) scaleY(0.66) translateY(-30%) translateX(-70%); }
-        .hero .caja2:hover .adultos-activado .posgrado h3 {
-          padding-top: .6em;
-          font-size: 20px;
-          color: #78d64b; }
-        .hero .caja2:hover .adultos-activado .posgrado p {
-          font-size: 16px; }
-        .hero .caja2:hover .adultos-activado .posgrado div {
-          display: flex; }
-          .hero .caja2:hover .adultos-activado .posgrado div .posgr div h4 {
-            font-size: 18px;
-            color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul {
-            font-size: 16px; }
-            .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li {
-              font-size: 14px; }
-              .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li ul {
-                font-size: 16px; }
-                .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li ul li {
-                  font-size: 14px; }
-          .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad {
-            display: flex;
-            justify-content: center; }
-            .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad h4 {
-              font-size: 18px;
-              color: #78d64b; }
-            .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad p {
-              font-size: 14px; }
-          .hero .caja2:hover .adultos-activado .posgrado div .maste div h4 {
-            font-size: 18px;
-            color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .posgrado div .maste div ul li {
-            font-size: 14px; }
-          .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad {
-            display: flex;
-            justify-content: center; }
-            .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad h4 {
-              font-size: 18px;
-              color: #78d64b; }
-            .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad p {
-              font-size: 14px; }
-          .hero .caja2:hover .adultos-activado .posgrado div .espec div h4 {
-            font-size: 18px;
-            color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .posgrado div .espec div ul li {
-            font-size: 14px; }
-          .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad {
-            display: flex;
-            justify-content: center; }
-            .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad h4 {
-              font-size: 18px;
-              color: #78d64b; }
-            .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad p {
-              font-size: 14px; }
-        .hero .caja2:hover .adultos-activado .posgrado .boton {
-          margin-top: 1.5em; }
-          .hero .caja2:hover .adultos-activado .posgrado .boton a {
-            width: 30%;
-            padding: 1em 2em 1em 2em;
-            border-radius: 5px;
-            font-family: 'SerifPro';
-            text-decoration: none;
-            font-size: 14px;
-            background-color: #78d64b;
-            color: #f9f1e6; }
-        .hero .caja2:hover .adultos-activado .ejecutivo h3 {
-          padding: .6em 0 .6em 0;
-          font-size: 20px;
-          color: #78d64b; }
-        .hero .caja2:hover .adultos-activado .ejecutivo p {
-          width: 170%;
-          font-size: 16px;
-          text-align: center;
-          transform: translateX(-20%); }
-        .hero .caja2:hover .adultos-activado .ejecutivo div h4 {
-          font-size: 18px;
-          color: #78d64b; }
-        .hero .caja2:hover .adultos-activado .ejecutivo div ul li {
-          font-size: 14px; }
-        .hero .caja2:hover .adultos-activado .ejecutivo .modalidad {
-          display: flex;
-          justify-content: center; }
-          .hero .caja2:hover .adultos-activado .ejecutivo .modalidad h4 {
-            font-size: 18px;
-            color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .ejecutivo .modalidad p {
-            font-size: 14px; }
-        .hero .caja2:hover .adultos-activado .ejecutivo .boton {
-          margin-top: 1.5em; }
-          .hero .caja2:hover .adultos-activado .ejecutivo .boton a {
-            width: 30%;
-            padding: 1em 2em 1em 2em;
-            border-radius: 5px;
-            font-family: 'SerifPro';
-            text-decoration: none;
-            font-size: 14px;
-            background-color: #78d64b;
-            color: #f9f1e6; }
-        .hero .caja2:hover .adultos-activado .asociado h3 {
-          padding: .6em 0 .6em 0;
-          font-size: 20px;
-          color: #e2243d; }
-        .hero .caja2:hover .adultos-activado .asociado p {
-          width: 170%;
-          font-size: 16px;
-          text-align: center;
-          transform: translateX(-20%); }
-        .hero .caja2:hover .adultos-activado .asociado div h4 {
-          font-size: 18px;
-          color: #e2243d; }
-        .hero .caja2:hover .adultos-activado .asociado div ul li {
-          font-size: 14px; }
-        .hero .caja2:hover .adultos-activado .asociado .modalidad {
-          display: flex;
-          justify-content: center; }
-          .hero .caja2:hover .adultos-activado .asociado .modalidad h4 {
-            font-size: 18px;
+        .hero .caja2:hover .adultos-activado .asociado {
+          transform: translateX(30%) translateY(5%); }
+          .hero .caja2:hover .adultos-activado .asociado h3 {
+            padding: .6em 0 .6em 0;
+            font-size: 20px;
             color: #e2243d; }
-          .hero .caja2:hover .adultos-activado .asociado .modalidad p {
-            font-size: 14px; }
-        .hero .caja2:hover .adultos-activado .asociado .boton {
-          margin-top: 1.5em; }
-          .hero .caja2:hover .adultos-activado .asociado .boton a {
-            width: 30%;
-            padding: 1em 2em 1em 2em;
-            border-radius: 5px;
-            font-family: 'SerifPro';
-            text-decoration: none;
+          .hero .caja2:hover .adultos-activado .asociado p {
+            width: 170%;
             font-size: 14px;
-            background-color: #e2243d;
-            color: #f9f1e6; }
+            text-align: center;
+            transform: translateX(-20%); }
+          .hero .caja2:hover .adultos-activado .asociado div h4 {
+            font-size: 16px;
+            color: #e2243d; }
+          .hero .caja2:hover .adultos-activado .asociado div ul {
+            list-style: initial; }
+            .hero .caja2:hover .adultos-activado .asociado div ul li {
+              font-size: 12px; }
+          .hero .caja2:hover .adultos-activado .asociado .modalidad {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            .hero .caja2:hover .adultos-activado .asociado .modalidad h4 {
+              font-size: 16px;
+              color: #e2243d; }
+            .hero .caja2:hover .adultos-activado .asociado .modalidad p {
+              font-size: 12px; }
+          .hero .caja2:hover .adultos-activado .asociado .boton {
+            margin-top: 1.5em; }
+            .hero .caja2:hover .adultos-activado .asociado .boton a {
+              width: 30%;
+              padding: 1em 2em 1em 2em;
+              border-radius: 5px;
+              font-family: 'SerifPro';
+              text-decoration: none;
+              font-size: 12px;
+              background-color: #e2243d;
+              color: #f9f1e6; }
+        .hero .caja2:hover .adultos-activado .posgrado {
+          transform: translateX(40%) translateY(5%);
+          width: 150%; }
+          .hero .caja2:hover .adultos-activado .posgrado h3 {
+            padding-top: .6em;
+            font-size: 20px;
+            color: #78d64b; }
+          .hero .caja2:hover .adultos-activado .posgrado p {
+            font-size: 14px; }
+          .hero .caja2:hover .adultos-activado .posgrado div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; }
+            .hero .caja2:hover .adultos-activado .posgrado div .posgr {
+              display: flex;
+              flex-direction: column; }
+              .hero .caja2:hover .adultos-activado .posgrado div .posgr div {
+                display: flex;
+                flex-direction: column; }
+                .hero .caja2:hover .adultos-activado .posgrado div .posgr div h3 {
+                  font-size: 16px;
+                  color: #78d64b; }
+                .hero .caja2:hover .adultos-activado .posgrado div .posgr div h4 {
+                  font-size: 16px;
+                  color: #78d64b; }
+                .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul {
+                  font-size: 14px;
+                  list-style: initial; }
+                  .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li {
+                    font-size: 12px; }
+                    .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li ul {
+                      font-size: 10px;
+                      list-style: circle; }
+                      .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li ul li {
+                        font-size: 10px; }
+              .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad {
+                display: flex;
+                flex-direction: column;
+                justify-content: center; }
+                .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad h4 {
+                  font-size: 16px;
+                  color: #78d64b;
+                  transform: translateY(-60%); }
+                .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad p {
+                  width: 140%;
+                  transform: translateY(-120%) translateX(-15%);
+                  font-size: 12px; }
+            .hero .caja2:hover .adultos-activado .posgrado div .maste {
+              display: flex;
+              flex-direction: column; }
+              .hero .caja2:hover .adultos-activado .posgrado div .maste div {
+                display: flex;
+                flex-direction: column; }
+                .hero .caja2:hover .adultos-activado .posgrado div .maste div h3 {
+                  font-size: 16px;
+                  color: #78d64b; }
+                .hero .caja2:hover .adultos-activado .posgrado div .maste div h4 {
+                  font-size: 16px;
+                  color: #78d64b; }
+                .hero .caja2:hover .adultos-activado .posgrado div .maste div ul {
+                  list-style: initial; }
+                  .hero .caja2:hover .adultos-activado .posgrado div .maste div ul li {
+                    font-size: 12px; }
+              .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad {
+                display: flex;
+                justify-content: center; }
+                .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad h4 {
+                  font-size: 16px;
+                  color: #78d64b;
+                  transform: translateY(140%); }
+                .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad p {
+                  font-size: 12px;
+                  transform: translateY(80%); }
+            .hero .caja2:hover .adultos-activado .posgrado div .espec {
+              display: flex;
+              flex-direction: column; }
+              .hero .caja2:hover .adultos-activado .posgrado div .espec div {
+                display: flex;
+                flex-direction: column; }
+                .hero .caja2:hover .adultos-activado .posgrado div .espec div h3 {
+                  font-size: 16px;
+                  color: #78d64b; }
+                .hero .caja2:hover .adultos-activado .posgrado div .espec div h4 {
+                  font-size: 16px;
+                  color: #78d64b; }
+                .hero .caja2:hover .adultos-activado .posgrado div .espec div ul {
+                  list-style: initial; }
+                  .hero .caja2:hover .adultos-activado .posgrado div .espec div ul li {
+                    font-size: 12px; }
+              .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transform: translateY(240%); }
+                .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad h4 {
+                  font-size: 16px;
+                  color: #78d64b; }
+                .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad p {
+                  font-size: 12px;
+                  transform: translateY(-50%); }
+          .hero .caja2:hover .adultos-activado .posgrado .boton {
+            margin-top: 1.5em;
+            display: flex;
+            justify-content: center; }
+            .hero .caja2:hover .adultos-activado .posgrado .boton a {
+              width: 30%;
+              padding: 1em 2em 1em 2em;
+              border-radius: 5px;
+              font-family: 'SerifPro';
+              text-decoration: none;
+              font-size: 12px;
+              background-color: #78d64b;
+              color: #f9f1e6;
+              transform: translateY(-70%); }
+        .hero .caja2:hover .adultos-activado .ejecutivo {
+          transform: translateX(450%) translateY(5%); }
+          .hero .caja2:hover .adultos-activado .ejecutivo h3 {
+            padding: .6em 0 .6em 0;
+            font-size: 20px;
+            color: #78d64b; }
+          .hero .caja2:hover .adultos-activado .ejecutivo p {
+            width: 170%;
+            font-size: 14px;
+            text-align: center;
+            transform: translateX(-20%); }
+          .hero .caja2:hover .adultos-activado .ejecutivo div {
+            width: 150%;
+            transform: translateX(-17%); }
+            .hero .caja2:hover .adultos-activado .ejecutivo div h4 {
+              font-size: 16px;
+              color: #78d64b; }
+            .hero .caja2:hover .adultos-activado .ejecutivo div ul {
+              list-style: initial; }
+              .hero .caja2:hover .adultos-activado .ejecutivo div ul li {
+                font-size: 12px; }
+          .hero .caja2:hover .adultos-activado .ejecutivo .modalidad {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            .hero .caja2:hover .adultos-activado .ejecutivo .modalidad h4 {
+              font-size: 16px;
+              color: #78d64b; }
+            .hero .caja2:hover .adultos-activado .ejecutivo .modalidad p {
+              font-size: 12px; }
+          .hero .caja2:hover .adultos-activado .ejecutivo .boton {
+            margin-top: 1.5em; }
+            .hero .caja2:hover .adultos-activado .ejecutivo .boton a {
+              width: 30%;
+              padding: 1em 2em 1em 2em;
+              border-radius: 5px;
+              font-family: 'SerifPro';
+              text-decoration: none;
+              font-size: 12px;
+              background-color: #78d64b;
+              color: #f9f1e6; }
+        .hero .caja2:hover .adultos-activado .contacto {
+          transform: translateY(-40%);
+          transform: translateX(20%); }
+          .hero .caja2:hover .adultos-activado .contacto h4 {
+            font-size: 16px;
+            color: #78d64b; }
+          .hero .caja2:hover .adultos-activado .contacto p {
+            font-size: 12px; }
     .hero .caja2 .adultos-normal {
       position: absolute;
       width: 100%; }
@@ -438,7 +509,7 @@ li {
           width: 130%;
           display: flex;
           justify-content: center;
-          transform: translateY(-300%) translateX(0%); }
+          transform: translateY(-300%); }
           .hero .caja3:hover .jovenes-activado .contacto h4 {
             font-size: 27px;
             color: #f68d2e; }
