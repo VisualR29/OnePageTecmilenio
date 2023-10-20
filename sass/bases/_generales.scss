@@ -1,21 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: nth($color-secun, 1);
     // Borrame!!!!
-    font-family: 'TheSansRegular';
+    font-family: 'MagallanesLight';
+}
 
-    h1 {
-        font-family: 'MagallanesBold';
-    }
+h1 {
+    font-family: 'MagallanesBold';
+}
 
-    h2 {
-        font-family: 'MagallanesBold';
-    }
+h2 {
+    font-family: 'MagallanesBold';
+}
 
-    h3 {
-        font-family: 'MagallanesLight';
-    }
+h3 {
+    font-family: 'MagallanesBold';
 }
 
 @font-face {
@@ -69,5 +68,74 @@
 }
 
 .fontSerifPro {
-    font-family: 'serifPro';
+    font-family: 'SerifPro';
+}* {
+    margin: 0;
+    padding: 0;
+    // Borrame!!!!
+    font-family: 'MagallanesLight';
+}
+
+h1{
+    font-family: 'MagallanesBold';
+}
+h2{
+    font-family: 'MagallanesBold';
+}
+h3{
+    font-family: 'MagallanesBold';
+}
+
+@font-face {
+    font-family: 'MagallanesLigth';
+    src: url(./../sources/Magallanes/MagallanesLight.ttf);
+}
+
+@font-face {
+    font-family: 'MagallanesBold';
+    src: url(./../../sources/Magallanes/MagallanesBold.ttf);
+}
+
+@font-face {
+    font-family: 'TheSansLight';
+    src: url(./../sources/the-sans-light/TheSansLight-Plain.otf);
+}
+
+@font-face {
+    font-family: 'TheSansRegular';
+    src: url(./../sources/the-sans-regular/TheSansRegular.otf);
+}
+
+@font-face {
+    font-family: 'TheSansBold';
+    src: url(./../sources/the-sans-bold-bold-plain_VSnvw/TheSansBoldBoldPlain.ttf);
+}
+
+@font-face {
+    font-family: 'SerifPro';
+    src: url(./../sources/amor-serif-text-pro-regular_NLN4g/AmorSerifTextProRegular.otf);
+}
+
+.fontMagallanesLight {
+    font-family: 'MagallanesLigth';
+}
+
+.fontMagallanesBold {
+    font-family: 'MagallanesBold';
+}
+
+.fontSansLight {
+    font-family: 'TheSansLight';
+}
+
+.fontSansRegular {
+    font-family: 'TheSansRegular';
+}
+
+.fontSansBold {
+    font-family: 'TheSansBold';
+}
+
+.fontSerifPro {
+    font-family: 'SerifPro';
 }
