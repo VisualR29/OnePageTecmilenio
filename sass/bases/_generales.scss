@@ -5,38 +5,6 @@
     font-family: 'TheSansLight';
 }
 
-h1 {
-    font-family: 'MagallanesBold';
-}
-
-h2 {
-    font-family: 'MagallanesBold';
-}
-
-h3 {
-    font-family: 'MagallanesBold';
-}
-
-h4 {
-    font-family: 'MagallanesLight';
-}
-
-p{
-    color: nth($color-secun, 1);
-    font-family: 'TheSansLight';
-    font-size: 12px;
-}
-
-ul{
-    list-style: none;
-}
-
-li{
-    color: nth($color-secun, 1);
-    font-family: 'TheSansLight';
-    font-size: 12px;
-}
-
 @font-face {
     font-family: 'MagallanesLigth';
     src: url(./../sources/Magallanes/MagallanesLight.ttf);

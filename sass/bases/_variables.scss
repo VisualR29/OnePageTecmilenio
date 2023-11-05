@@ -1,7 +1,100 @@
 $color-master: #00534c, #68caba, #00a499, #007864, #26d07c;
 
-$color-secun: #f9f1e6, #c3f7ee;
+$color-secun: #f9f1e6, #c3f7ee, #00a598, #e2243d;
 
 $color-profe: #78d64b, #c5e86c, #97d700, #64a70b;
 
 $color-prepa: #f68d2e, #ffb549, #ff7f32, #cb6015;
+
+%cuadros {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    h2 {
+        padding: 12px;
+        font-size: 30px;
+        font-family: 'MagallanesLight';
+    }
+
+    p {
+        margin: 0px 15px 10px 15px;
+        font-size: 14px;
+        font-family: 'TheSansRegular';
+    }
+}
+
+%redes {
+    background-color: #00534c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    transition: box-shadow 0.3s ease;
+
+    .telefono {
+        padding-top: 5px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        a {
+            i {
+                font-size: 25px;
+                color: nth($color-master , 5);
+                margin: 0px 10px 0px 10px;
+                cursor: pointer;
+            }
+        }
+
+        div {
+            h3 {
+                font-size: 15px;
+                font-family: 'TheSansBold';
+                color: nth($color-secun, 1);
+            }
+
+            p {
+                font-size: 15px;
+                font-family: 'SerifPro';
+                color: nth($color-secun, 1);
+            }
+        }
+    }
+
+    .email {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        a {
+            i {
+                font-size: 25px;
+                color: nth($color-master , 5);
+                margin: 0px 10px 0px 10px;
+                cursor: pointer;
+            }
+        }
+
+        div {
+            h3 {
+                font-size: 15px;
+                font-family: 'TheSansBold';
+                color: nth($color-secun, 1);
+            }
+
+            p {
+                font-size: 15px;
+                font-family: 'SerifPro';
+                color: nth($color-secun, 1);
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+}

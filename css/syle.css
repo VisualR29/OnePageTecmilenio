@@ -1,32 +1,68 @@
+.seccion1 .t .grilla .activador1 div, .seccion1 .t .grilla .activador2 div, .seccion1 .t .grilla .activador3 div {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .seccion1 .t .grilla .activador1 div h2, .seccion1 .t .grilla .activador2 div h2, .seccion1 .t .grilla .activador3 div h2 {
+    padding: 12px;
+    font-size: 30px;
+    font-family: 'MagallanesLight'; }
+  .seccion1 .t .grilla .activador1 div p, .seccion1 .t .grilla .activador2 div p, .seccion1 .t .grilla .activador3 div p {
+    margin: 0px 15px 10px 15px;
+    font-size: 14px;
+    font-family: 'TheSansRegular'; }
+
+.seccion2 .contacto, .seccion3 .contacto, .seccion4 .contacto {
+  background-color: #00534c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  transition: box-shadow 0.3s ease; }
+  .seccion2 .contacto .telefono, .seccion3 .contacto .telefono, .seccion4 .contacto .telefono {
+    padding-top: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center; }
+    .seccion2 .contacto .telefono a i, .seccion3 .contacto .telefono a i, .seccion4 .contacto .telefono a i {
+      font-size: 25px;
+      color: #26d07c;
+      margin: 0px 10px 0px 10px;
+      cursor: pointer; }
+    .seccion2 .contacto .telefono div h3, .seccion3 .contacto .telefono div h3, .seccion4 .contacto .telefono div h3 {
+      font-size: 15px;
+      font-family: 'TheSansBold';
+      color: #f9f1e6; }
+    .seccion2 .contacto .telefono div p, .seccion3 .contacto .telefono div p, .seccion4 .contacto .telefono div p {
+      font-size: 15px;
+      font-family: 'SerifPro';
+      color: #f9f1e6; }
+  .seccion2 .contacto .email, .seccion3 .contacto .email, .seccion4 .contacto .email {
+    text-decoration: none;
+    display: flex;
+    align-items: center; }
+    .seccion2 .contacto .email a i, .seccion3 .contacto .email a i, .seccion4 .contacto .email a i {
+      font-size: 25px;
+      color: #26d07c;
+      margin: 0px 10px 0px 10px;
+      cursor: pointer; }
+    .seccion2 .contacto .email div h3, .seccion3 .contacto .email div h3, .seccion4 .contacto .email div h3 {
+      font-size: 15px;
+      font-family: 'TheSansBold';
+      color: #f9f1e6; }
+    .seccion2 .contacto .email div p, .seccion3 .contacto .email div p, .seccion4 .contacto .email div p {
+      font-size: 15px;
+      font-family: 'SerifPro';
+      color: #f9f1e6; }
+  .seccion2 .contacto:hover, .seccion3 .contacto:hover, .seccion4 .contacto:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'TheSansLight'; }
-
-h1 {
-  font-family: 'MagallanesBold'; }
-
-h2 {
-  font-family: 'MagallanesBold'; }
-
-h3 {
-  font-family: 'MagallanesBold'; }
-
-h4 {
-  font-family: 'MagallanesLight'; }
-
-p {
-  color: #f9f1e6;
-  font-family: 'TheSansLight';
-  font-size: 12px; }
-
-ul {
-  list-style: none; }
-
-li {
-  color: #f9f1e6;
-  font-family: 'TheSansLight';
-  font-size: 12px; }
 
 @font-face {
   font-family: 'MagallanesLigth';
@@ -70,496 +106,118 @@ li {
 .fontSerifPro {
   font-family: 'SerifPro'; }
 
-.hero {
+.seccion1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.163), rgba(0, 0, 0, 0.312)), url(../../img/fullback.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
   width: 100vw;
-  height: 100vh;
-  margin-bottom: 10vh;
-  background: linear-gradient(#007864, #f9f1e6);
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; }
-  .hero .titulo {
-    grid-area: 1 / 1 / 5 / 7; }
-    .hero .titulo img {
-      width: 100%;
-      height: 100%; }
-  .hero .mision {
-    grid-area: 4 / 3 / 5 / 7;
-    font-size: 12px; }
-  .hero .imagen {
-    grid-area: 4 / 7 / 13 / 12; }
-    .hero .imagen img {
-      width: 100%;
-      height: 100%; }
-  .hero .caja1 {
-    border-radius: 5px;
-    background: #00534c;
-    grid-area: 1 / 9 / 11 / 14;
-    transform: scale(0.5);
-    transition: 1s;
-    position: relative; }
-    .hero .caja1:hover {
-      z-index: 1;
-      box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
-      transform: scaleY(0.9) scaleX(1.1); }
-      .hero .caja1:hover .aprendedores-normal {
-        opacity: 0; }
-      .hero .caja1:hover .aprendedores-activado {
-        opacity: 1;
-        width: 100%;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        transform: scaleX(0.9); }
-        .hero .caja1:hover .aprendedores-activado .skilling h3 {
-          padding-top: .6em;
-          font-size: 20px;
-          color: #00a598; }
-        .hero .caja1:hover .aprendedores-activado .skilling p {
-          font-size: 16px; }
-        .hero .caja1:hover .aprendedores-activado .skilling div h4 {
-          font-size: 18px;
-          color: #00a598; }
-        .hero .caja1:hover .aprendedores-activado .skilling div ul li {
-          font-size: 14px; }
-        .hero .caja1:hover .aprendedores-activado .skilling div ul .idiomas {
-          transform: translateY(-13px); }
-          .hero .caja1:hover .aprendedores-activado .skilling div ul .idiomas img {
-            margin-left: .1em;
-            width: 2.5em;
-            height: auto;
-            transform: translateY(12px); }
-        .hero .caja1:hover .aprendedores-activado .skilling .modalidad {
-          display: flex;
-          justify-content: center; }
-          .hero .caja1:hover .aprendedores-activado .skilling .modalidad h4 {
-            font-size: 18px;
-            color: #00a598; }
-          .hero .caja1:hover .aprendedores-activado .skilling .modalidad p {
-            font-size: 14px; }
-        .hero .caja1:hover .aprendedores-activado .skilling .contacto {
-          display: flex;
-          justify-content: center; }
-          .hero .caja1:hover .aprendedores-activado .skilling .contacto h4 {
-            font-size: 18px;
-            color: #00a598; }
-          .hero .caja1:hover .aprendedores-activado .skilling .contacto p {
-            font-size: 14px; }
-        .hero .caja1:hover .aprendedores-activado .skilling .boton {
-          margin-top: 1.5em; }
-          .hero .caja1:hover .aprendedores-activado .skilling .boton a {
-            width: 30%;
-            padding: 1em 2em 1em 2em;
-            border-radius: 5px;
-            font-family: 'SerifPro';
-            text-decoration: none;
-            font-size: 14px;
-            background-color: #00a598;
-            color: #f9f1e6; }
-    .hero .caja1 .aprendedores-normal {
-      position: absolute;
-      width: 100%; }
-      .hero .caja1 .aprendedores-normal h2 {
-        width: 100%;
-        padding: 1em 0 .6em 0;
-        text-align: center;
-        font-size: 40px;
-        color: #c3f7ee; }
-      .hero .caja1 .aprendedores-normal h3 {
-        padding: 1.5em;
-        font-size: 30px;
-        text-align: center;
-        color: #f9f1e6; }
-    .hero .caja1 .aprendedores-activado {
-      position: absolute;
-      opacity: 0; }
-  .hero .caja2 {
-    border-radius: 5px;
-    background: #007864;
-    grid-area: 6 / 4 / 15 / 9;
-    transform: scale(0.5);
-    transition: 1s;
-    position: relative; }
-    .hero .caja2:hover {
-      z-index: 1;
-      box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
-      transform: scaleY(1.5) scaleX(2.5) translateY(-10%) translateX(20%); }
-      .hero .caja2:hover .adultos-normal {
-        opacity: 0; }
-      .hero .caja2:hover .adultos-activado {
-        opacity: 1;
-        width: 100%;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
-        transform: scaleX(0.4) scaleY(0.66) translateY(-30%) translateX(-70%); }
-        .hero .caja2:hover .adultos-activado .asociado {
-          transform: translateX(30%) translateY(5%); }
-          .hero .caja2:hover .adultos-activado .asociado h3 {
-            padding: .6em 0 .6em 0;
-            font-size: 20px;
-            color: #e2243d; }
-          .hero .caja2:hover .adultos-activado .asociado p {
-            width: 170%;
-            font-size: 14px;
-            text-align: center;
-            transform: translateX(-20%); }
-          .hero .caja2:hover .adultos-activado .asociado div h4 {
-            font-size: 16px;
-            color: #e2243d; }
-          .hero .caja2:hover .adultos-activado .asociado div ul {
-            list-style: initial; }
-            .hero .caja2:hover .adultos-activado .asociado div ul li {
-              font-size: 12px; }
-          .hero .caja2:hover .adultos-activado .asociado .modalidad {
-            display: flex;
-            flex-direction: column;
-            justify-content: center; }
-            .hero .caja2:hover .adultos-activado .asociado .modalidad h4 {
-              font-size: 16px;
-              color: #e2243d; }
-            .hero .caja2:hover .adultos-activado .asociado .modalidad p {
-              font-size: 12px; }
-          .hero .caja2:hover .adultos-activado .asociado .boton {
-            margin-top: 1.5em; }
-            .hero .caja2:hover .adultos-activado .asociado .boton a {
-              width: 30%;
-              padding: 1em 2em 1em 2em;
-              border-radius: 5px;
-              font-family: 'SerifPro';
-              text-decoration: none;
-              font-size: 12px;
-              background-color: #e2243d;
-              color: #f9f1e6; }
-        .hero .caja2:hover .adultos-activado .posgrado {
-          transform: translateX(40%) translateY(5%);
-          width: 150%; }
-          .hero .caja2:hover .adultos-activado .posgrado h3 {
-            padding-top: .6em;
-            font-size: 20px;
-            color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .posgrado p {
-            font-size: 14px; }
-          .hero .caja2:hover .adultos-activado .posgrado div {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px; }
-            .hero .caja2:hover .adultos-activado .posgrado div .posgr {
-              display: flex;
-              flex-direction: column; }
-              .hero .caja2:hover .adultos-activado .posgrado div .posgr div {
-                display: flex;
-                flex-direction: column; }
-                .hero .caja2:hover .adultos-activado .posgrado div .posgr div h3 {
-                  font-size: 16px;
-                  color: #78d64b; }
-                .hero .caja2:hover .adultos-activado .posgrado div .posgr div h4 {
-                  font-size: 16px;
-                  color: #78d64b; }
-                .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul {
-                  font-size: 14px;
-                  list-style: initial; }
-                  .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li {
-                    font-size: 12px; }
-                    .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li ul {
-                      font-size: 10px;
-                      list-style: circle; }
-                      .hero .caja2:hover .adultos-activado .posgrado div .posgr div ul li ul li {
-                        font-size: 10px; }
-              .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad {
-                display: flex;
-                flex-direction: column;
-                justify-content: center; }
-                .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad h4 {
-                  font-size: 16px;
-                  color: #78d64b;
-                  transform: translateY(-60%); }
-                .hero .caja2:hover .adultos-activado .posgrado div .posgr .modalidad p {
-                  width: 140%;
-                  transform: translateY(-120%) translateX(-15%);
-                  font-size: 12px; }
-            .hero .caja2:hover .adultos-activado .posgrado div .maste {
-              display: flex;
-              flex-direction: column; }
-              .hero .caja2:hover .adultos-activado .posgrado div .maste div {
-                display: flex;
-                flex-direction: column; }
-                .hero .caja2:hover .adultos-activado .posgrado div .maste div h3 {
-                  font-size: 16px;
-                  color: #78d64b; }
-                .hero .caja2:hover .adultos-activado .posgrado div .maste div h4 {
-                  font-size: 16px;
-                  color: #78d64b; }
-                .hero .caja2:hover .adultos-activado .posgrado div .maste div ul {
-                  list-style: initial; }
-                  .hero .caja2:hover .adultos-activado .posgrado div .maste div ul li {
-                    font-size: 12px; }
-              .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad {
-                display: flex;
-                justify-content: center; }
-                .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad h4 {
-                  font-size: 16px;
-                  color: #78d64b;
-                  transform: translateY(140%); }
-                .hero .caja2:hover .adultos-activado .posgrado div .maste .modalidad p {
-                  font-size: 12px;
-                  transform: translateY(80%); }
-            .hero .caja2:hover .adultos-activado .posgrado div .espec {
-              display: flex;
-              flex-direction: column; }
-              .hero .caja2:hover .adultos-activado .posgrado div .espec div {
-                display: flex;
-                flex-direction: column; }
-                .hero .caja2:hover .adultos-activado .posgrado div .espec div h3 {
-                  font-size: 16px;
-                  color: #78d64b; }
-                .hero .caja2:hover .adultos-activado .posgrado div .espec div h4 {
-                  font-size: 16px;
-                  color: #78d64b; }
-                .hero .caja2:hover .adultos-activado .posgrado div .espec div ul {
-                  list-style: initial; }
-                  .hero .caja2:hover .adultos-activado .posgrado div .espec div ul li {
-                    font-size: 12px; }
-              .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                transform: translateY(240%); }
-                .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad h4 {
-                  font-size: 16px;
-                  color: #78d64b; }
-                .hero .caja2:hover .adultos-activado .posgrado div .espec .modalidad p {
-                  font-size: 12px;
-                  transform: translateY(-50%); }
-          .hero .caja2:hover .adultos-activado .posgrado .boton {
-            margin-top: 1.5em;
-            display: flex;
-            justify-content: center; }
-            .hero .caja2:hover .adultos-activado .posgrado .boton a {
-              width: 30%;
-              padding: 1em 2em 1em 2em;
-              border-radius: 5px;
-              font-family: 'SerifPro';
-              text-decoration: none;
-              font-size: 12px;
-              background-color: #78d64b;
-              color: #f9f1e6;
-              transform: translateY(-70%); }
-        .hero .caja2:hover .adultos-activado .ejecutivo {
-          transform: translateX(450%) translateY(5%); }
-          .hero .caja2:hover .adultos-activado .ejecutivo h3 {
-            padding: .6em 0 .6em 0;
-            font-size: 20px;
-            color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .ejecutivo p {
-            width: 170%;
-            font-size: 14px;
-            text-align: center;
-            transform: translateX(-20%); }
-          .hero .caja2:hover .adultos-activado .ejecutivo div {
-            width: 150%;
-            transform: translateX(-17%); }
-            .hero .caja2:hover .adultos-activado .ejecutivo div h4 {
-              font-size: 16px;
-              color: #78d64b; }
-            .hero .caja2:hover .adultos-activado .ejecutivo div ul {
-              list-style: initial; }
-              .hero .caja2:hover .adultos-activado .ejecutivo div ul li {
-                font-size: 12px; }
-          .hero .caja2:hover .adultos-activado .ejecutivo .modalidad {
-            display: flex;
-            flex-direction: column;
-            justify-content: center; }
-            .hero .caja2:hover .adultos-activado .ejecutivo .modalidad h4 {
-              font-size: 16px;
-              color: #78d64b; }
-            .hero .caja2:hover .adultos-activado .ejecutivo .modalidad p {
-              font-size: 12px; }
-          .hero .caja2:hover .adultos-activado .ejecutivo .boton {
-            margin-top: 1.5em; }
-            .hero .caja2:hover .adultos-activado .ejecutivo .boton a {
-              width: 30%;
-              padding: 1em 2em 1em 2em;
-              border-radius: 5px;
-              font-family: 'SerifPro';
-              text-decoration: none;
-              font-size: 12px;
-              background-color: #78d64b;
-              color: #f9f1e6; }
-        .hero .caja2:hover .adultos-activado .contacto {
-          transform: translateY(-40%);
-          transform: translateX(20%); }
-          .hero .caja2:hover .adultos-activado .contacto h4 {
-            font-size: 16px;
-            color: #78d64b; }
-          .hero .caja2:hover .adultos-activado .contacto p {
-            font-size: 12px; }
-    .hero .caja2 .adultos-normal {
-      position: absolute;
-      width: 100%; }
-      .hero .caja2 .adultos-normal h2 {
-        width: 100%;
-        padding: 1em 0 0 0;
-        text-align: center;
-        font-size: 40px;
-        color: #c3f7ee; }
-      .hero .caja2 .adultos-normal h3 {
-        padding: .8em 1.5em .8em 1.5em;
-        font-size: 30px;
-        text-align: center;
-        color: #f9f1e6; }
-    .hero .caja2 .adultos-activado {
-      position: absolute;
-      opacity: 0; }
-  .hero .caja3 {
-    border-radius: 5px;
-    background: #00534c;
-    grid-area: 6 / 8 / 17 / 13;
-    transform: scale(0.5);
-    transition: 1s;
-    position: relative; }
-    .hero .caja3:hover {
-      z-index: 1;
-      box-shadow: -1px -1px 6px 0 #5ca2eb, 4px 4px 16px 2px #7add66;
-      transform: translateY(-20%) scaleX(1.5); }
-      .hero .caja3:hover .jovenes-normal {
-        opacity: 0; }
-      .hero .caja3:hover .jovenes-activado {
-        opacity: 1;
-        width: 100%;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        transform: scaleX(0.5) scaleY(0.65); }
-        .hero .caja3:hover .jovenes-activado .semestral {
-          width: 110%;
-          transform: translateX(-40%) translateY(-30%); }
-          .hero .caja3:hover .jovenes-activado .semestral h3 {
-            padding-top: .6em;
-            font-size: 30px;
-            color: #78d64b; }
-          .hero .caja3:hover .jovenes-activado .semestral p {
-            font-size: 24px; }
-          .hero .caja3:hover .jovenes-activado .semestral div h4 {
-            font-size: 27px;
-            color: #78d64b; }
-          .hero .caja3:hover .jovenes-activado .semestral div ul li {
-            font-size: 21px; }
-          .hero .caja3:hover .jovenes-activado .semestral .modalidad {
-            display: flex;
-            justify-content: center;
-            margin-top: .5em; }
-            .hero .caja3:hover .jovenes-activado .semestral .modalidad h4 {
-              font-size: 27px;
-              color: #78d64b; }
-            .hero .caja3:hover .jovenes-activado .semestral .modalidad p {
-              font-size: 21px; }
-          .hero .caja3:hover .jovenes-activado .semestral .boton {
-            margin-top: 1.5em;
-            transform: translateY(170%); }
-            .hero .caja3:hover .jovenes-activado .semestral .boton a {
-              width: 30%;
-              padding: 1em 2em 1em 2em;
-              border-radius: 5px;
-              font-family: 'SerifPro';
-              text-decoration: none;
-              font-size: 21px;
-              background-color: #78d64b;
-              color: #f9f1e6; }
-        .hero .caja3:hover .jovenes-activado .preparatoria {
-          width: 180%;
-          transform: translateX(-35%) translateY(-30%); }
-          .hero .caja3:hover .jovenes-activado .preparatoria h3 {
-            padding-top: .6em;
-            font-size: 30px;
-            color: #f68d2e; }
-          .hero .caja3:hover .jovenes-activado .preparatoria p {
-            font-size: 24px; }
-          .hero .caja3:hover .jovenes-activado .preparatoria div h4 {
-            font-size: 27px;
-            color: #f68d2e; }
-          .hero .caja3:hover .jovenes-activado .preparatoria div ul li {
-            font-size: 21px; }
-          .hero .caja3:hover .jovenes-activado .preparatoria .modalidad {
-            display: flex;
-            justify-content: center;
-            margin-top: .5em; }
-            .hero .caja3:hover .jovenes-activado .preparatoria .modalidad h4 {
-              font-size: 27px;
-              color: #f68d2e; }
-            .hero .caja3:hover .jovenes-activado .preparatoria .modalidad p {
-              font-size: 21px; }
-          .hero .caja3:hover .jovenes-activado .preparatoria .boton {
-            margin-top: 1.5em;
-            transform: translateY(1100%); }
-            .hero .caja3:hover .jovenes-activado .preparatoria .boton a {
-              width: 30%;
-              padding: 1em 2em 1em 2em;
-              border-radius: 5px;
-              font-family: 'SerifPro';
-              text-decoration: none;
-              font-size: 21px;
-              background-color: #f68d2e;
-              color: #f9f1e6; }
-        .hero .caja3:hover .jovenes-activado .contacto {
-          width: 130%;
-          display: flex;
-          justify-content: center;
-          transform: translateY(-300%); }
-          .hero .caja3:hover .jovenes-activado .contacto h4 {
-            font-size: 27px;
-            color: #f68d2e; }
-          .hero .caja3:hover .jovenes-activado .contacto p {
-            font-size: 21px; }
-    .hero .caja3 .jovenes-normal {
-      position: absolute;
-      width: 100%; }
-      .hero .caja3 .jovenes-normal h2 {
-        width: 100%;
-        padding: 1em 0 0 0;
-        text-align: center;
-        font-size: 40px;
-        color: #c3f7ee; }
-      .hero .caja3 .jovenes-normal h3 {
-        padding: .8em 1.5em .8em 1.5em;
-        font-size: 30px;
-        text-align: center;
-        color: #f9f1e6; }
-    .hero .caja3 .jovenes-activado {
-      position: absolute;
-      opacity: 0; }
-  .hero .slogan {
-    grid-area: 15 / 1 / 16 / 4;
-    font-size: 25px;
-    margin-left: 2em;
-    color: #00534c; }
-  .hero .modelo {
-    grid-area: 10 / 14 / 16 / 17;
-    margin-right: 1em;
+  height: 100vh; }
+  .seccion1 .t {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .hero .modelo h3 {
-      font-size: 16px;
-      text-align: center;
-      color: #00534c; }
-    .hero .modelo a {
-      text-align: center;
-      margin-top: .8em; }
-      .hero .modelo a img {
-        width: 70%; }
-    .hero .modelo div {
-      margin-top: 1em; }
-      .hero .modelo div a {
-        width: 30%;
-        padding: .5em 1em .5em 1em;
-        border-radius: 5px;
-        font-family: 'SerifPro';
-        text-decoration: none;
-        font-size: 14px;
-        background-color: #00534c;
-        color: #f9f1e6; }
+    justify-content: center;
+    margin-top: 75px; }
+    .seccion1 .t .grilla {
+      display: grid;
+      grid-template-columns: repeat(3, 225px);
+      grid-template-rows: repeat(3, 190px);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px; }
+      .seccion1 .t .grilla .activador1 {
+        grid-area: 1 / 1 / 2 / 2; }
+        .seccion1 .t .grilla .activador1 div {
+          background: #03786a;
+          color: white; }
+      .seccion1 .t .grilla .imagen {
+        grid-area: 1 / 2 / 3 / 3; }
+        .seccion1 .t .grilla .imagen img {
+          width: 100%; }
+      .seccion1 .t .grilla .activador2 {
+        grid-area: 1 / 3 / 2 / 4; }
+        .seccion1 .t .grilla .activador2 div {
+          background: #65b5a3;
+          color: #024e49; }
+      .seccion1 .t .grilla .activador3 {
+        grid-area: 3 / 2 / 4 / 3; }
+        .seccion1 .t .grilla .activador3 div {
+          background: #07524c;
+          color: white; }
+      .seccion1 .t .grilla .boton {
+        width: 225px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease; }
+        .seccion1 .t .grilla .boton:hover {
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
+
+.seccion2 {
+  background-color: lightblue;
+  position: absolute;
+  width: 100vw;
+  height: 100vh; }
+  .seccion2 .desactivador {
+    margin: 20px; }
+    .seccion2 .desactivador img {
+      width: 40px;
+      padding: 5px;
+      background-color: aqua;
+      border: 2px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease; }
+      .seccion2 .desactivador img:hover {
+        box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); }
+  .seccion2 .contacto {
+    width: 220px; }
+
+.seccion3 {
+  background-color: lightgreen;
+  position: absolute;
+  width: 100vw;
+  height: 100vh; }
+  .seccion3 .desactivador {
+    margin: 20px; }
+    .seccion3 .desactivador img {
+      width: 40px;
+      padding: 5px;
+      background-color: aqua;
+      border: 2px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease; }
+      .seccion3 .desactivador img:hover {
+        box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); }
+  .seccion3 .contacto {
+    width: 220px; }
+
+.seccion4 {
+  background-color: orange;
+  position: absolute;
+  width: 100vw;
+  height: 100vh; }
+  .seccion4 .desactivador {
+    margin: 20px; }
+    .seccion4 .desactivador img {
+      width: 40px;
+      padding: 5px;
+      background-color: aqua;
+      border: 2px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease; }
+      .seccion4 .desactivador img:hover {
+        box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); }
+  .seccion4 .contacto {
+    width: 260px; }
+
+.ocultar {
+  opacity: 0;
+  visibility: hidden; }
+
+@media screen and (max-width: 1350px) {
+  .hero {
+    transform: scale(0.9); } }
