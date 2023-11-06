@@ -13,18 +13,18 @@ const desjovenes = document.getElementById('desjovenes');
 actaprendedores.addEventListener('click', () => {
     aprendedores.classList.remove('ocultar');
 })
-desaprendedores.addEventListener('click',() => {
+desaprendedores.addEventListener('click', () => {
     aprendedores.classList.add('ocultar');
 })
 actadultos.addEventListener('click', () => {
     adultos.classList.remove('ocultar');
 })
-desadultos.addEventListener('click',() => {
+desadultos.addEventListener('click', () => {
     adultos.classList.add('ocultar');
 })
 actjovenes.addEventListener('click', () => {
     jovenes.classList.remove('ocultar');
 })
-desjovenes.addEventListener('click',() => {
+desjovenes.addEventListener('click', () => {
     jovenes.classList.add('ocultar');
 })
