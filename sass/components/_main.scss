@@ -1,11 +1,16 @@
 .seccion1 {
     .fondo{
-        background-image: url(./../../img/fullback.png);
-        background-image: url(file);
+        background-image: url(../img/fullback.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        position: absolute;
         width: 100vw;
         height: 100vh;
+        // img{
+            // position: absolute;
+        //     width: 100%;
+        //     position: absolute;
+        // }
     }
 
     .t {
@@ -13,6 +18,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 15vh;
+        position: absolute;
 
         .grilla {
             display: grid;
