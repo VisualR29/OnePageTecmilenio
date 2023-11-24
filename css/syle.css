@@ -1,62 +1,46 @@
-.seccion1 .t .grilla .activador1 div, .seccion1 .t .grilla .activador2 div, .seccion1 .t .grilla .activador3 div {
-  width: 100%;
-  height: 100%;
-  text-align: center; }
-  .seccion1 .t .grilla .activador1 div h2, .seccion1 .t .grilla .activador2 div h2, .seccion1 .t .grilla .activador3 div h2 {
-    padding: 12px;
-    font-size: 30px;
-    font-family: 'MagallanesLight'; }
-  .seccion1 .t .grilla .activador1 div p, .seccion1 .t .grilla .activador2 div p, .seccion1 .t .grilla .activador3 div p {
-    margin: 0px 15px 10px 15px;
-    font-size: 14px;
-    font-family: 'TheSansRegular'; }
-
-.seccion2 .contacto, .seccion3 .contacto, .seccion4 .contacto {
-  background-color: #00534c;
+.seccion2 .cuadrito .contacto, .seccion3 .cuadrito .contacto, .seccion4 .cuadrito .contacto {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 2px solid black;
-  border-radius: 10px;
   padding: 10px;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: column;
   justify-content: left;
   transition: box-shadow 0.3s ease; }
-  .seccion2 .contacto .telefono, .seccion3 .contacto .telefono, .seccion4 .contacto .telefono {
-    padding-top: 5px;
+  .seccion2 .cuadrito .contacto .telefono, .seccion3 .cuadrito .contacto .telefono, .seccion4 .cuadrito .contacto .telefono {
     text-decoration: none;
     display: flex;
     align-items: center; }
-    .seccion2 .contacto .telefono a i, .seccion3 .contacto .telefono a i, .seccion4 .contacto .telefono a i {
+    .seccion2 .cuadrito .contacto .telefono a i, .seccion3 .cuadrito .contacto .telefono a i, .seccion4 .cuadrito .contacto .telefono a i {
       font-size: 25px;
       color: #26d07c;
       margin: 0px 10px 0px 10px;
       cursor: pointer; }
-    .seccion2 .contacto .telefono div h3, .seccion3 .contacto .telefono div h3, .seccion4 .contacto .telefono div h3 {
+    .seccion2 .cuadrito .contacto .telefono div h3, .seccion3 .cuadrito .contacto .telefono div h3, .seccion4 .cuadrito .contacto .telefono div h3 {
       font-size: 15px;
       font-family: 'TheSansBold';
       color: #f9f1e6; }
-    .seccion2 .contacto .telefono div p, .seccion3 .contacto .telefono div p, .seccion4 .contacto .telefono div p {
+    .seccion2 .cuadrito .contacto .telefono div p, .seccion3 .cuadrito .contacto .telefono div p, .seccion4 .cuadrito .contacto .telefono div p {
       font-size: 15px;
       font-family: 'SerifPro';
       color: #f9f1e6; }
-  .seccion2 .contacto .email, .seccion3 .contacto .email, .seccion4 .contacto .email {
+  .seccion2 .cuadrito .contacto .email, .seccion3 .cuadrito .contacto .email, .seccion4 .cuadrito .contacto .email {
     text-decoration: none;
     display: flex;
     align-items: center; }
-    .seccion2 .contacto .email a i, .seccion3 .contacto .email a i, .seccion4 .contacto .email a i {
+    .seccion2 .cuadrito .contacto .email a i, .seccion3 .cuadrito .contacto .email a i, .seccion4 .cuadrito .contacto .email a i {
       font-size: 25px;
       color: #26d07c;
       margin: 0px 10px 0px 10px;
       cursor: pointer; }
-    .seccion2 .contacto .email div h3, .seccion3 .contacto .email div h3, .seccion4 .contacto .email div h3 {
+    .seccion2 .cuadrito .contacto .email div h3, .seccion3 .cuadrito .contacto .email div h3, .seccion4 .cuadrito .contacto .email div h3 {
       font-size: 15px;
       font-family: 'TheSansBold';
       color: #f9f1e6; }
-    .seccion2 .contacto .email div p, .seccion3 .contacto .email div p, .seccion4 .contacto .email div p {
+    .seccion2 .cuadrito .contacto .email div p, .seccion3 .cuadrito .contacto .email div p, .seccion4 .cuadrito .contacto .email div p {
       font-size: 15px;
       font-family: 'SerifPro';
       color: #f9f1e6; }
-  .seccion2 .contacto:hover, .seccion3 .contacto:hover, .seccion4 .contacto:hover {
+  .seccion2 .cuadrito .contacto:hover, .seccion3 .cuadrito .contacto:hover, .seccion4 .cuadrito .contacto:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
 
 * {
@@ -106,124 +90,374 @@
 .fontSerifPro {
   font-family: 'SerifPro'; }
 
+body {
+  background-color: #06796b; }
+
 .seccion1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.163), rgba(0, 0, 0, 0.312)), url(../../img/fullback.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 100vw;
-  height: 100vh; }
-  .seccion1 .t {
+  background-color: #06796b; }
+  .seccion1 .logo img {
+    width: 25vw; }
+  .seccion1 .barra {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 15vh; }
-    .seccion1 .t .grilla {
+    justify-content: center;
+    margin-bottom: 30px; }
+    .seccion1 .barra div {
+      background-color: white;
+      font-size: 5px;
+      color: white;
+      width: 85vw;
+      height: 10px; }
+  .seccion1 .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .seccion1 .contenedor .grilla {
+      width: 80vw;
       display: grid;
-      grid-template-columns: repeat(5, 225px);
-      grid-template-rows: repeat(3, 190px);
-      grid-column-gap: 0px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 40px;
       grid-row-gap: 0px; }
-      .seccion1 .t .grilla .activador1 {
+      .seccion1 .contenedor .grilla .div1 {
+        grid-area: 1 / 1 / 2 / 2; }
+        .seccion1 .contenedor .grilla .div1 img {
+          width: 100%;
+          transition: transform 0.5s ease-in-out; }
+          .seccion1 .contenedor .grilla .div1 img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+      .seccion1 .contenedor .grilla .div2 {
         grid-area: 1 / 2 / 2 / 3; }
-        .seccion1 .t .grilla .activador1 div {
-          background: #03786a;
-          color: white; }
-      .seccion1 .t .grilla .imagen {
-        grid-area: 1 / 3 / 3 / 4; }
-        .seccion1 .t .grilla .imagen img {
-          width: 100%; }
-      .seccion1 .t .grilla .activador2 {
-        grid-area: 1 / 4 / 2 / 5; }
-        .seccion1 .t .grilla .activador2 div {
-          background: #65b5a3;
-          color: #024e49; }
-      .seccion1 .t .grilla .activador3 {
-        grid-area: 3 / 3 / 4 / 4; }
-        .seccion1 .t .grilla .activador3 div {
-          background: #07524c;
-          color: white; }
-      .seccion1 .t .grilla .bienestar {
-        grid-area: 3 / 5 / 4 / 6; }
-        .seccion1 .t .grilla .bienestar img {
-          width: 150%; }
-      .seccion1 .t .grilla .boton {
-        width: 225px;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: box-shadow 0.7s ease; }
-        .seccion1 .t .grilla .boton:hover {
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.4);
-          outline-color: rgba(49, 138, 172, 0);
-          outline-offset: 60px;
-          text-shadow: .5px .5px 3px #fff; }
+        .seccion1 .contenedor .grilla .div2 img {
+          width: 100%;
+          transition: transform 0.5s ease-in-out; }
+          .seccion1 .contenedor .grilla .div2 img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+      .seccion1 .contenedor .grilla .div3 {
+        grid-area: 1 / 3 / 2 / 4; }
+        .seccion1 .contenedor .grilla .div3 img {
+          width: 100%;
+          transition: transform 0.5s ease-in-out; }
+          .seccion1 .contenedor .grilla .div3 img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
 
 .seccion2 {
-  background-color: lightblue;
-  position: absolute;
-  width: 100vw;
-  height: 100vh; }
-  .seccion2 .desactivador {
-    margin: 20px; }
-    .seccion2 .desactivador img {
-      width: 40px;
-      padding: 5px;
-      background-color: aqua;
-      border: 2px solid black;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s ease; }
-      .seccion2 .desactivador img:hover {
-        box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); }
-  .seccion2 .contacto {
-    width: 220px; }
+  background-color: #65c5b7; }
+  .seccion2 .navbar {
+    display: flex;
+    align-items: center; }
+    .seccion2 .navbar .logo img {
+      width: 25vw; }
+    .seccion2 .navbar .goback {
+      display: flex;
+      align-items: center;
+      margin-left: 55vw; }
+      .seccion2 .navbar .goback img {
+        width: 12vw;
+        border-radius: 30px;
+        transition: transform 0.5s ease-in-out; }
+        .seccion2 .navbar .goback img:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+  .seccion2 .barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; }
+    .seccion2 .barra div {
+      background-color: white;
+      font-size: 5px;
+      color: white;
+      width: 85vw;
+      height: 10px; }
+  .seccion2 .skilling {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw; }
+    .seccion2 .skilling .titulo {
+      position: relative;
+      width: 40%;
+      margin-left: 30%;
+      z-index: 1; }
+    .seccion2 .skilling .informacion {
+      position: absolute;
+      width: 80%;
+      padding-top: 5%; }
+    .seccion2 .skilling .vermas {
+      position: relative;
+      border-radius: 30px;
+      margin-top: 41%;
+      margin-left: 65%;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; }
+      .seccion2 .skilling .vermas img {
+        width: 12vw; }
+      .seccion2 .skilling .vermas:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); }
+  .seccion2 .cuadrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%; }
+    .seccion2 .cuadrito .contacto {
+      width: 225px;
+      background-color: #00534c; }
+      .seccion2 .cuadrito .contacto .telefono {
+        padding-top: 5px; }
+        .seccion2 .cuadrito .contacto .telefono a i {
+          color: #26d07c; }
 
 .seccion3 {
-  background-color: lightgreen;
-  position: absolute;
-  width: 100vw;
-  height: 100vh; }
-  .seccion3 .desactivador {
-    margin: 20px; }
-    .seccion3 .desactivador img {
-      width: 40px;
-      padding: 5px;
-      background-color: aqua;
-      border: 2px solid black;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s ease; }
-      .seccion3 .desactivador img:hover {
-        box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); }
-  .seccion3 .contacto {
-    width: 220px; }
+  background-color: #06534c; }
+  .seccion3 .navbar {
+    display: flex;
+    align-items: center; }
+    .seccion3 .navbar .logo img {
+      width: 25vw; }
+    .seccion3 .navbar .goback {
+      display: flex;
+      align-items: center;
+      margin-left: 55vw; }
+      .seccion3 .navbar .goback img {
+        width: 12vw;
+        border-radius: 30px;
+        transition: transform 0.5s ease-in-out; }
+        .seccion3 .navbar .goback img:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+  .seccion3 .barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; }
+    .seccion3 .barra div {
+      background-color: white;
+      font-size: 5px;
+      color: white;
+      width: 85vw;
+      height: 10px; }
+  .seccion3 .ejecutivo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw; }
+    .seccion3 .ejecutivo .titulo {
+      position: relative;
+      width: 45%;
+      margin-right: 35%;
+      z-index: 1; }
+    .seccion3 .ejecutivo .informacion {
+      position: absolute;
+      width: 80%;
+      padding-top: 4%; }
+    .seccion3 .ejecutivo .vermas {
+      position: relative;
+      border-radius: 30px;
+      margin-top: 23%;
+      margin-right: 17%;
+      margin-bottom: 3%;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; }
+      .seccion3 .ejecutivo .vermas img {
+        width: 12vw; }
+      .seccion3 .ejecutivo .vermas:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); }
+  .seccion3 .asociado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw; }
+    .seccion3 .asociado .titulo {
+      position: relative;
+      width: 50%;
+      margin-left: 30%;
+      z-index: 1; }
+    .seccion3 .asociado .informacion {
+      position: absolute;
+      width: 80%;
+      padding-top: 4%; }
+    .seccion3 .asociado .vermas {
+      position: relative;
+      border-radius: 30px;
+      margin-top: 26.5%;
+      margin-left: 40%;
+      margin-bottom: 3%;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; }
+      .seccion3 .asociado .vermas img {
+        width: 12vw; }
+      .seccion3 .asociado .vermas:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); }
+  .seccion3 .posgrado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw; }
+    .seccion3 .posgrado .titulo {
+      position: relative;
+      width: 20%;
+      margin-right: 30%;
+      z-index: 1; }
+    .seccion3 .posgrado .informacion {
+      position: absolute;
+      width: 80%;
+      padding-top: 3.5%; }
+    .seccion3 .posgrado .vermas1 {
+      position: relative;
+      border-radius: 30px;
+      margin-top: 25%;
+      margin-right: 13.5%;
+      margin-bottom: 4%;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; }
+      .seccion3 .posgrado .vermas1 img {
+        width: 12vw; }
+      .seccion3 .posgrado .vermas1:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); }
+    .seccion3 .posgrado .vermas2 {
+      position: relative;
+      border-radius: 30px;
+      margin-top: 3%;
+      margin-left: 58%;
+      margin-bottom: 3%;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; }
+      .seccion3 .posgrado .vermas2 img {
+        width: 12vw; }
+      .seccion3 .posgrado .vermas2:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); }
+    .seccion3 .posgrado .vermas3 {
+      position: relative;
+      border-radius: 30px;
+      margin-top: 8%;
+      margin-left: 58%;
+      margin-bottom: 15%;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; }
+      .seccion3 .posgrado .vermas3 img {
+        width: 12vw; }
+      .seccion3 .posgrado .vermas3:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); }
+  .seccion3 .cuadrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%; }
+    .seccion3 .cuadrito .contacto {
+      width: 225px;
+      background-color: #65c5b7; }
+      .seccion3 .cuadrito .contacto .telefono {
+        padding-top: 5px; }
+        .seccion3 .cuadrito .contacto .telefono a i {
+          color: #007864; }
+      .seccion3 .cuadrito .contacto .email a i {
+        color: #007864; }
 
 .seccion4 {
-  background-color: orange;
-  position: absolute;
-  width: 100vw;
-  height: 100vh; }
-  .seccion4 .desactivador {
-    margin: 20px; }
-    .seccion4 .desactivador img {
-      width: 40px;
-      padding: 5px;
-      background-color: aqua;
-      border: 2px solid black;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s ease; }
-      .seccion4 .desactivador img:hover {
-        box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); }
-  .seccion4 .contacto {
-    width: 260px; }
-
-.ocultar {
-  opacity: 0;
-  visibility: hidden; }
+  background-color: #65c5b7; }
+  .seccion4 .navbar {
+    display: flex;
+    align-items: center; }
+    .seccion4 .navbar .logo img {
+      width: 25vw; }
+    .seccion4 .navbar .goback {
+      display: flex;
+      align-items: center;
+      margin-left: 55vw; }
+      .seccion4 .navbar .goback img {
+        width: 12vw;
+        border-radius: 30px;
+        transition: transform 0.5s ease-in-out; }
+        .seccion4 .navbar .goback img:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+  .seccion4 .barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; }
+    .seccion4 .barra div {
+      background-color: white;
+      font-size: 5px;
+      color: white;
+      width: 85vw;
+      height: 10px; }
+  .seccion4 .semestral {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw; }
+    .seccion4 .semestral .titulo {
+      position: relative;
+      width: 50%;
+      margin-left: 25%;
+      z-index: 1; }
+    .seccion4 .semestral .informacion {
+      position: absolute;
+      width: 80%;
+      padding-top: 4.5%; }
+    .seccion4 .semestral .vermas {
+      position: relative;
+      border-radius: 30px;
+      margin-top: 24%;
+      margin-left: 25%;
+      margin-bottom: 3%;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; }
+      .seccion4 .semestral .vermas img {
+        width: 12vw; }
+      .seccion4 .semestral .vermas:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); }
+  .seccion4 .preparatoria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw; }
+    .seccion4 .preparatoria .titulo {
+      position: relative;
+      width: 30%;
+      margin-right: 25%;
+      z-index: 1; }
+    .seccion4 .preparatoria .informacion {
+      position: absolute;
+      width: 80%;
+      padding-top: 5%; }
+    .seccion4 .preparatoria .vermas {
+      position: relative;
+      border-radius: 30px;
+      margin-top: 22%;
+      margin-right: 20%;
+      margin-bottom: 7%;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; }
+      .seccion4 .preparatoria .vermas img {
+        width: 12vw; }
+      .seccion4 .preparatoria .vermas:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); }
+  .seccion4 .cuadrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%; }
+    .seccion4 .cuadrito .contacto {
+      width: 255px;
+      background-color: #00534c; }
+      .seccion4 .cuadrito .contacto .telefono {
+        padding-top: 5px; }
+        .seccion4 .cuadrito .contacto .telefono a i {
+          color: #26d07c; }
 
 @media screen and (max-width: 1350px) {
   .hero {
