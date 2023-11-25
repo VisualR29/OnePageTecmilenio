@@ -94,4 +94,44 @@ $color-prepa: #f68d2e, #ffb549, #ff7f32, #cb6015;
     &:hover {
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     }
+
+    @media screen and (max-width: 700px) {
+        .telefono {
+            a {
+                i {
+                    font-size: 16px;
+                    margin: 0px 7px 0px 7px;
+                }
+            }
+
+            div {
+                h3 {
+                    font-size: 10px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .email {
+            a {
+                i {
+                    font-size: 16px;
+                    margin: 0px 7px 0px 7px;
+                }
+            }
+
+            div {
+                h3 {
+                    font-size: 10px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
 }
