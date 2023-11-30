@@ -167,25 +167,110 @@
 }
 
 @media screen and (max-width: 700px) {
-    .seccion2{
-        .cuadrito{
-            .contacto{
+    .seccion1 {
+        background-color: #06796b;
+
+        .logo {
+            img {
+                width: 25vw;
+            }
+        }
+
+        .barra {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            div {
+                background-color: white;
+                font-size: 5px;
+                color: white;
+                width: 85vw;
+                height: 10px;
+            }
+        }
+
+        .contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .grilla {
+                width: 65vw;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 30px;
+
+                .div1 {
+                    grid-area: 1 / 1 / 2 / 2;
+
+                    img {
+                        width: 100%;
+                        transition: transform 0.5s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.1);
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+
+                .div2 {
+                    grid-area: 2 / 1 / 3 / 2;
+
+                    img {
+                        width: 100%;
+                        transition: transform 0.5s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.1);
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+
+                .div3 {
+                    grid-area: 3 / 1 / 4 / 2;
+
+                    img {
+                        width: 100%;
+                        transition: transform 0.5s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.1);
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .seccion2 {
+        .cuadrito {
+            .contacto {
                 width: 145px;
             }
         }
     }
-    .seccion3{
-        .cuadrito{
-            .contacto{
+    
+    .seccion3 {
+        .cuadrito {
+            .contacto {
                 width: 140px;
             }
         }
     }
-    .seccion4{
-        .cuadrito{
-            .contacto{
+    
+    .seccion4 {
+        .cuadrito {
+            .contacto {
                 width: 165px;
             }
         }
     }
 }
+
+
